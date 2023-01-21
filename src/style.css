@@ -4,27 +4,27 @@
 
 @font-face {
   font-family: "Inter";
-  src: url("./fonts/Inter.ttf");
+  src: url("fonts/Inter.ttf");
 }
 
 @font-face {
   font-family: "Manrope";
-  src: url("./fonts/Manrope.ttf");
+  src: url("fonts/Manrope.ttf");
 }
 
 @font-face {
   font-family: "Forum";
-  src: url("./fonts/Forum.ttf");
+  src: url("fonts/Forum.ttf");
 }
 
 @font-face {
   font-family: "Arima";
-  src: url("./fonts/Arima.ttf");
+  src: url("fonts/Arima.ttf");
 }
 
 @font-face {
   font-family: "EB Garamond";
-  src: url("./fonts/EB Garamond.ttf");
+  src: url("fonts/EB Garamond.ttf");
 }
 
 html,
@@ -32,7 +32,17 @@ body {
   overscroll-behavior: none;
   margin: 0;
   padding: 0;
+  font-family: Inter;
+  line-height: 1.75;
+}
+
+h1,
+h2 {
   font-family: EB Garamond;
+}
+
+.font-serif {
+  font-family: "EB Garamond";
 }
 
 .outline-title {

@@ -122,7 +122,7 @@ function init() {
     textureWidth: 512,
     textureHeight: 512,
     waterNormals: new THREE.TextureLoader().load(
-      "../textures/waternormals.jpg",
+      "textures/waternormals.jpg",
       function (texture) {
         texture.wrapS = texture.wrapT = THREE.RepeatWrapping;
       }
@@ -322,15 +322,10 @@ function init() {
         document.querySelector("#dive-in-button").style.display = "none";
       }
     }
-
-    // if (camera.position.y < 0 && camera.position.y > -10) {
-    //   document.querySelector("#main").style.opacity = Math.min(
-    //     camera.position.y / -10,
-    //     1
-    //   );
-
-    //   console.log(Math.min(-camera.position.y - 14, 1));
-    // }
+    document.querySelector("#main-container").style.opacity = Math.min(
+      camera.position.y / -10,
+      1
+    );
   });
 }
 
