@@ -88,3 +88,12 @@ h2 {
 #spacer {
   height: 50vh;
 }
+
+td {
+  padding: 0.4rem 0;
+}
+
+a {
+  color: #d74;
+  text-decoration: underline;
+}

@@ -323,7 +323,7 @@ function init() {
       }
     }
     document.querySelector("#main-container").style.opacity = Math.min(
-      camera.position.y / -10,
+      (camera.position.y - 2) / -10,
       1
     );
     // Add dark blue filter if camera is below 0
