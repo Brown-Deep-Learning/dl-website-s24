@@ -4,27 +4,27 @@
 
 @font-face {
   font-family: "Inter";
-  src: url("fonts/Inter.ttf");
+  src: url("../fonts/Inter.ttf");
 }
 
 @font-face {
   font-family: "Manrope";
-  src: url("fonts/Manrope.ttf");
+  src: url("../fonts/Manrope.ttf");
 }
 
 @font-face {
   font-family: "Forum";
-  src: url("fonts/Forum.ttf");
+  src: url("../fonts/Forum.ttf");
 }
 
 @font-face {
   font-family: "Arima";
-  src: url("fonts/Arima.ttf");
+  src: url("../fonts/Arima.ttf");
 }
 
 @font-face {
   font-family: "EB Garamond";
-  src: url("fonts/EB Garamond.ttf");
+  src: url("../fonts/EB Garamond.ttf");
 }
 
 html,
@@ -43,7 +43,7 @@ h3 {
 }
 
 .font-serif {
-  font-family: "EB Garamond";
+  font-family: EB Garamond;
 }
 
 .outline-title {
