@@ -326,6 +326,27 @@ function init() {
       camera.position.y / -10,
       1
     );
+    // Add dark blue filter if camera is below 0
+    if (camera.position.y < 0) {
+      // const hue = camera.position.y * -20;
+      document.querySelector("#scene").style.filter = `hue-rotate(170deg)`;
+    } else {
+      document.querySelector("#scene").style.filter = "none";
+    }
+
+    // if (
+    //   camera.position.y < 1 &&
+    //   camera.position.y > 0 &&
+    //   !document.querySelector("body")?.classList.contains("scrolled")
+    // ) {
+    //   const mainY = document.querySelector("#main")?.offsetTop;
+    //   console.log(mainY);
+    //   window.scrollTo({
+    //     top: mainY - 200,
+    //     behavior: "smooth",
+    //   });
+    //   document.querySelector("body")?.classList.add("scrolled");
+    // }
   });
 }
 
