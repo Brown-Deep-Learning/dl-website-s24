@@ -30,6 +30,8 @@ jobs:
     - name: Build
       run: npm run build
     - name: Deploy
-      run: npx gh-pages -d dist -b gh-pages -u "dylanhu7 <git@dylan.hu>"
+      run: |
+        git remote set-url origin https://git:${GITHUB_TOKEN}@github.com/Brown-Deep-Learning/dl-website-s23.git
+        npx gh-pages -d dist -b gh-pages -u "github-actions-bot <support+actions@github.com>"
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
