@@ -2,7 +2,6 @@
   "name": "dl-website-s23",
   "private": true,
   "version": "0.0.0",
-  "homepage": "dl-website-s23",
   "type": "module",
   "scripts": {
     "dev": "vite",
