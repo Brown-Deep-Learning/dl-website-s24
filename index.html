@@ -89,7 +89,7 @@
           class="w-full flex flex-col justify-center items-center gap-4 frosted-clear text-slate-600 sticky top-0"
         >
           <div
-            class="flex flex-col lg:gap-0 max-w-screen-lg frosted px-8 pt-[-8rem] md:pt-0 md:px-16 pb-16"
+            class="flex flex-col lg:gap-0 max-w-full md:max-w-screen-lg frosted px-8 md:pt-0 md:px-16 pb-16"
           >
             <section id="home" class="flex flex-col gap-6 pt-32 md:pt-32">
               <h2 class="text-3xl md:text-4xl font-semibold">
@@ -177,35 +177,37 @@
                   >
                 </div>
                 <hr />
-                <table>
-                  <thead>
-                    <tr hidden>
-                      <th><!--Date--></th>
-                      <th><!--Topic--></th>
-                      <th><!--Slides--></th>
-                      <th><!--Recordings--></th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <tr class="font-semibold">
-                      <td>[Week 1-4]</td>
-                      <td>Deep Learning Basics</td>
-                      <td></td>
-                      <td></td>
-                    </tr>
-                    <tr>
-                      <td><b>[0-2]</b> 01/25</td>
-                      <td>Welcome to Deep Learning</td>
-                    </tr>
-                    <tr>
-                      <td><b>[0-3]</b> 01/27</td>
-                      <td>
-                        Supervised Learning - Classification/Regression,
-                        Training/Validation/Testing
-                      </td>
-                    </tr>
-                  </tbody>
-                </table>
+                <div class="overflow-scroll">
+                  <table class="min-w-[540px]">
+                    <thead>
+                      <tr hidden>
+                        <th><!--Date--></th>
+                        <th><!--Topic--></th>
+                        <th><!--Slides--></th>
+                        <th><!--Recordings--></th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr class="font-semibold">
+                        <td>[Week 1-4]</td>
+                        <td>Deep Learning Basics</td>
+                        <td></td>
+                        <td></td>
+                      </tr>
+                      <tr>
+                        <td><b>[0-2]</b> 01/25</td>
+                        <td>Welcome to Deep Learning</td>
+                      </tr>
+                      <tr>
+                        <td><b>[0-3]</b> 01/27</td>
+                        <td>
+                          Supervised Learning - Classification/Regression,
+                          Training/Validation/Testing
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
               </div>
             </section>
             <section id="assignments" class="flex flex-col gap-6 pt-32">
@@ -213,76 +215,82 @@
               <div class="flex flex-col gap-4">
                 <div class="flex flex-col">
                   <i
-                    >Assignments will be released at noon and due at midnight in
-                    U.S. Eastern Time.</i
+                    >Assignments will be released at noon and due at 6:00pm U.S.
+                    Eastern Time.</i
                   >
                 </div>
                 <hr />
-                <table>
-                  <thead>
-                    <tr class="text-left">
-                      <th></th>
-                      <th>Assignment</th>
-                      <th>Out</th>
-                      <th>Due</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <tr>
-                      <td><b>[HW0]</b></td>
-                      <td>
-                        <a href="https://hackmd.io/oHSgnWRcTaC-f7X2r6b6nA"
-                          >Setup</a
-                        >
-                      </td>
-                      <td>Wednesday 1/25</td>
-                      <td>Friday 1/27</td>
-                    </tr>
-                    <tr>
-                      <td><b>[HW0]</b></td>
-                      <td>
-                        <a href="https://hackmd.io/PT9wrqnMQfaFMM2_U0QxXQ"
-                          >Math Review</a
-                        >
-                      </td>
-                      <td>Wednesday 1/25</td>
-                      <td>Friday 1/27</td>
-                    </tr>
-                  </tbody>
-                </table>
+                <div class="overflow-scroll">
+                  <table class="min-w-[540px]">
+                    <thead>
+                      <tr class="text-left">
+                        <th></th>
+                        <th>Assignment</th>
+                        <th>Out</th>
+                        <th>Due</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td><b>[HW0]</b></td>
+                        <td>
+                          <a href="https://hackmd.io/oHSgnWRcTaC-f7X2r6b6nA"
+                            >Setup</a
+                          >
+                        </td>
+                        <td>Wednesday 1/25</td>
+                        <td>Friday 1/27</td>
+                      </tr>
+                      <tr>
+                        <td><b>[HW0]</b></td>
+                        <td>
+                          <a href="https://hackmd.io/PT9wrqnMQfaFMM2_U0QxXQ"
+                            >Math Review</a
+                          >
+                        </td>
+                        <td>Wednesday 1/25</td>
+                        <td>Friday 1/27</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
               </div>
             </section>
             <section id="labs" class="flex flex-col gap-6 pt-32">
               <h2 class="text-3xl md:text-4xl font-semibold">Labs</h2>
               <div class="flex flex-col gap-4">
-                <div class="flex flex-col">
-                  <b>Choose your lab section <a href="">here</a></b>
+                <div class="flex flex-col gap-2">
+                  <b class="font-semibold"
+                    >Choose your lab section <a href="">here</a></b
+                  >
                   <i
                     >See the Resources section for information on opening labs
                     and using Google Colaboratory.</i
                   >
                 </div>
                 <hr />
-                <table>
-                  <thead>
-                    <tr class="text-left">
-                      <th></th>
-                      <th>Lab</th>
-                      <th>From</th>
-                      <th>Until</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <tr>
-                      <td><b>[Lab0]</b></td>
-                      <td>
-                        <a href="">Introduction to NumPy</a>
-                      </td>
-                      <td>Wednesday 1/25</td>
-                      <td>Sunday 1/29</td>
-                    </tr>
-                  </tbody>
-                </table>
+                <div class="overflow-scroll">
+                  <table class="min-w-[540px]">
+                    <thead>
+                      <tr class="text-left">
+                        <th></th>
+                        <th>Lab</th>
+                        <th>From</th>
+                        <th>Until</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td><b>[Lab0]</b></td>
+                        <td>
+                          <a href="">Introduction to NumPy</a>
+                        </td>
+                        <td>Wednesday 1/25</td>
+                        <td>Sunday 1/29</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
               </div>
             </section>
             <section id="hours" class="flex flex-col gap-6 pt-32">
