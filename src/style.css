@@ -29,6 +29,7 @@
 
 html,
 body {
+  scroll-behavior: smooth;
   overscroll-behavior: none;
   margin: 0;
   padding: 0;
