@@ -117,7 +117,7 @@ function init() {
 
   // Water
 
-  const waterGeometry = new THREE.PlaneGeometry(1000, 1000, 1024, 1024);
+  const waterGeometry = new THREE.PlaneGeometry(1000, 1000, 40, 40);
   water = new Water(waterGeometry, {
     textureWidth: 512,
     textureHeight: 512,
@@ -135,6 +135,8 @@ function init() {
     // fog: scene.fog !== undefined,
   });
   water.rotation.x = -Math.PI / 2;
+  water.position.x -= 200;
+  water.position.z -= 400;
 
   // add scene fog
 
