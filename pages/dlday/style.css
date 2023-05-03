@@ -4,12 +4,12 @@
 
 @font-face {
   font-family: "Inter";
-  src: url("fonts/Inter.ttf");
+  src: url("../fonts/Inter.ttf");
 }
 
 @font-face {
   font-family: "EB Garamond";
-  src: url("fonts/EB Garamond.ttf");
+  src: url("../fonts/EB Garamond.ttf");
 }
 
 html,
