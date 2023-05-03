@@ -124,14 +124,14 @@ def generate_rows(file_path):
                 tr_tags = f'<tr style="background-color: #1B2367 !important;">', '</tr>'
             elif 'Parallel' in c2_txt:
                 tr_tags = f'<tr class="week-header" style="font-size: 1.2em; background-color: {group_colors[group_idx]} !important;">', '</tr>'
-                c1_txt = f'<span style="font-size: 0.9em !important;">{c1_txt}</span>'
+                c1_txt = f'{c1_txt}'
             elif any(head in c2_txt for head in ['Opening Remarks', 'Closing Remarks', 'Session', 'Lunch Break']):
                 group_idx += 1
-                tr_tags = f'<tr class="week-header" style="font-size: 1.4em; background-color: {group_colors[group_idx]} !important;">', '</tr>'
+                tr_tags = f'<tr class="bg-slate-300 font-semibold">', '</tr>'
                 c1_txt = f'<span style="font-size: 0.8em !important;">{c1_txt}</span>'
                 if 'Session' in c2_txt:
                     c3_txt = cal_pics.pop(0)
-                c3_txt = f'<span style="font-size: 0.8em !important;">{c3_txt}</span>'
+                c3_txt = f'{c3_txt}'
             else: 
                 tr_tags = '<tr>', '</tr>'
                 if any(cut in c2_txt[:-1] for cut in ['!', ':', '(', '-']):

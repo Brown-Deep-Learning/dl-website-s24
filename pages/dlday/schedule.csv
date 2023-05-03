@@ -1,82 +1,96 @@
-Time ,Title ,Members
-,,
-9:00 AM,Opening Remarks,
-,,
-9:10 AM,Session 1: Seattle - Computer Vision,
-9:10 AM,GeoGuesser: Guessing Countries from Street View,"Abhyudaya Sharma, Klimentina Krstevska, YouJung Koo"
-9:22 AM,NeuroVision,"Woody Hulse, Micah Lessnick, Vandana Ramesh"
-9:34 AM,A modified visual system simulation model improves the robustness of white box adversarial attack,"Yuqi Lei, Jingze Liu, Shilong Wu, Yinglong Li"
-9:46 AM,Arbiter,"Daniel Cai, Nicholas Vadasz, Panos Syrgkanis"
-9:58 AM,Super Resolution GAN Models for Low Resolution Images,"Yash Bafna, Honglin Wu, Shilai Yang, Sang Uk Park"
-10:10 AM,Poster session (Parallel),
-,One-Shot Learning with Siamese Neural Networks,"Alexander Adams, Ivan Sung, Henry Powers"
-,Geoguessr! I don’t even know her,"Rohan, Ashley, Mehek, Ford"
-,Missing Travel Sign Recognition ,"Yifan Zhang, Xilin Wang, Yuechuan Yang"
-,SIMCLR,"Deshante Hattori-Lindsey, Benjamin Maizes, Y​​u-Ang Cheng, Ethan Ohayon"
-,Adversarial Attack for Image Classification,"Kyler Hwa, Sudatta Hor, Michael Donoso"
-,Overfeat,"Oliver Kanders, John Manning, Tobias Tettamanti, Ding Ding Wei"
-,YouTube Thumbnails Evaluation,"Roshan Sapkota, Daniel Ghebreyesus, Abhinav Sriram, Matthew Yee"
-,Image Denoising using autoencoders,"Peter Curtin, Daniel Healey, Luke Hammer"
-,Image Colorization,"Benjamin Duong, Seyit Metin Barut, Yaoqi Pang, Zahra Naqvi"
-,One-Shot Learning with Siamese Neural Networks,"Alexander Adams, Ivan Sung, Henry Powers"
-,,
-10:40 AM,Session 2: San Fransisco - Language Processing,
-10:40 AM,Assembly to C Translation,"Andrew Yang, Tiger Ji, Frank Chiu, Justin Cheng"
-10:52 AM,bulkyBERT,"Cecile Meier-Scherling, Julian Stamp, Blake Hansen"
-11:04 AM,Probing the dynamics of word embeddings and prompt completions using time-sliced training of language models,"Roman Hall, Zaul Tavangar, Gopal Iyer"
-11:20 AM,Poster session (Parallel),
-,Bias Analysis on Media,"Nicholas Yarnall, Amogh Parmeswaran, Ayush Gupta"
-,Multimodal VQA Using Pretrained Experts,"Heon Lee, Ilana Nguyen, Kelvin Jiang"
-,UnCAPTCHA,"Charlie Clynes, Mahlon Page, Eva Schiller"
-,Cogito Brunésum,"Gabrielle Shieh, Nolan Serbent, Jonathan Goshu, Nolan Serbent"
-,Not ChatGPT,"Mary Regan, Anand Advani"
-,Predicting Tweet Reply Sentiment Based on Tweets,"Anna Novatney, Jay Lin, Hunter Adrian, Darren Fang "
-,Emotion Classification in Speech Using Deep Neural Networks,"Annabelle Gao, Stephen Pyon"
-,Sarcasm Detection: The Best Deep Learning Project Ever Created,"Mark Miller, Rahel Selemon"
-,Text to Emoji Prediction,"Anna Ohrt,Amanda Hernandez Sandate,Lilly Schroeder "
-,Keep It On the DL,"Jennifer Wang, Emily Wang, Calvin Eng, Isha Mody"
-,,
-,,
-12:00 PM,Session 3: Boston - Science and Health,
-12:00 PM,Weakly Supervised Whole-Slide Cell Images Segmentation,"Yiyang Nan, Minghui Ke, Junyi Zhu, Xufan Wang"
-12:12 PM,Predicting Transcription Factor Binding from DNA Sequences,"Joseph Aguilera, Bryan Natividad, Nigel Anderson, Connor Staggs"
-12:24 PM,SenID: Senescent Cell Identification,"Anthony Agudelo, Matt Murakami, Nikolai Stambler"
-12:36 PM,Detecting Heavy Drinking Episodes Using Deep Learning Techniques on Smartphone Accelerometer Data,"Muskaan Patel, Sarah Prakriti Peters, Amrit Singh Rana"
-12:48 PM,Cellular age classification in the hypothalamus,"Ananya, Jessy, Tuan"
-1:00 PM,<NAME NOT DETERMINED>,"Ewina, Rekha, Stefan"
-1:20 PM,Poster session (Parallel),
-,Tumor classification through CNN,"Toshiki Kato, Raphael Li, Alexander Zheng"
-,Using convolutional neural networks to diagnose melanoma-presenting skin growths.,"Jeremy Lum, Sean Yu, Kristen Cai, Thomas Bui"
-,CNN-Bi-LSTM for SARS CoV-2 Classification,"Corinn Tiffany, Aidan Harbison, Zyn Yee Ang, Rachel Chae"
-,Terraforming with Pix2Pix and elevation maps,"Julian Dai, Taj Gillin, Eric Xia"
-,Pediatric bone age regression (Team Bones),"Mitchell Salomon, Joel Kim, Andrew Xu"
-,Computational Recognition and Prediction of Epileptic Seizure Dynamics in Electroencephalograms: A Multi-Model Comparison.,"Luke Briody, Eugene Oh, Samantha Minars, Sophie Ljung"
-,Saguaro Identification,"Matthew Prenovitz, Ty Pham-Swann, Jacob Wilner"
-,Brain Tumor Imaging,"Daniel Cho, Kameel Dossal, David Han, Erica Song"
-,Wildfire Spread Prediction Model,"Henry Earnest,James Hu,Rishi Patel"
-,Bone jour!,"Byron Butaney,Xiaohan Ye,Thu Luu"
-,Prosthetic AI (Bi Dex Hands),"Will Havens, Arata Fujii, Siddharth Boppana"
-,,
-1:50 AM,"Session 4: New York - Art, Music, Finance, and others",
-1:50 AM,DeepHAM: Applying Deep Learning and Reduction Peeling to Determine Optimal Heuristics for Finding Hamiltonian Paths,"Edward Bielawa, Hammad Izhar, Joseph Rotella"
-1:50 AM,Gender bias in children's fairy tales,"Ran An, Li Feng, Selina Wang"
-2:02 AM,Deep Causal Policy Learning,Juan Yamin Silva
-2:20 AM,Poster session (Parallel),
-,Meter-aware Mandarin to English Poetry Translation Model.,"Thomas Styron, Yi-Hao Tan, James Scherick, Justin Anagonye-Bahn"
-,poe-m,"Sedong Hwang, Akira Nair, Christine Jeong"
-,UnRembrandt,"Daniel Wang, Harys Dalvi, Sebastian Park"
-,Cogito Brunésum,"Gabrielle Shieh, Nolan Serbent, Jonathan Goshu, Nolan Serbent"
-,Ghibli Image Style Transfer,"Ariana Codjoe, Lynda Winnie Umuhoza, Haruka Masamura, Alexandra Floru"
-,Texture synthesis with CNN,"Mohammed Khan, Gabriel Mahler, Frank Carber"
-,Melody Morpher,"Trevor Wiedmann, Kiera Walsh, Jennifer Chen, Caroline Zhang"
-,Trading Bot ,"Arman Mohammadi, Mohammad Hijaz, Amin Hijaz"
-,DeepSolve: Using Neural Networks to solve Poker,"Jason Silva,Torsten Ullrich,Ken Ngamprasertsith"
-,Stock Predictor,"Courtney Tse, Syon Khosla, Noah Atanda, Lafayette Bussey"
-,Paint Me Like One of your French Girls,"Antonio Cortabarria, Cannon Caspar, William Van de Walle, Santiago Cortabarria"
-,Poetic Prodigy - Personalized Poetry Generator,"Aanya Hudda, Katherine Mao, Mason Zhang, Tabitha Lynn"
-,,
-,,
-10,Minutes for opening remarks,
-12,Minutes per presentation,
-30,Minutes per poster cluster,
-40,Minutes for lunch,
+Time ,Title ,Members,
+,,,
+9:00 AM,Opening Remarks,,
+,,,
+9:10 AM,Session 1: Seattle - Computer Vision (17 projects) [6+11],Judge for talks: Prof. Andras Zsom,
+9:10 AM,GeoGuesser: Guessing Countries from Street View,"Abhyudaya Sharma, Klimentina Krstevska, YouJung Koo",63
+9:22 AM,NeuroVision,"Woody Hulse, Micah Lessnick, Vandana Ramesh",66
+9:34 AM,A modified visual system simulation model improves the robustness of white box adversarial attack,"Yuqi Lei, Jingze Liu, Shilong Wu, Yinglong Li",72
+9:46 AM,Arbiter,"Daniel Cai, Nicholas Vadasz, Panos Syrgkanis",54
+9:58 AM,Super Resolution GAN Models for Low Resolution Images,"Yash Bafna, Honglin Wu, Shilai Yang, Sang Uk Park",55
+10:10 AM,Investigating Properties of Visual Soft Prompting,"Calvin Luo, Sebastián Varón, Yuki Zang",
+10:22 AM,Poster session (Parallel),,
+,One-Shot Learning with Siamese Neural Networks,"Alexander Zhou, Jamie Gabbay, Michael Fu, Paul Lestz",46
+,Geoguessr! I don’t even know her,"Rohan, Ashley, Mehek, Ford",49
+,Missing Travel Sign Recognition ,"Yifan Zhang, Xilin Wang, Yuechuan Yang",43
+,SIMCLR,"Deshante Hattori-Lindsey, Benjamin Maizes, Y​​u-Ang Cheng, Ethan Ohayon",12
+,Adversarial Attack for Image Classification,"Kyler Hwa, Sudatta Hor, Michael Donoso",24
+,Overfeat,"Oliver Kanders, John Manning, Tobias Tettamanti, Ding Ding Wei",29
+,YouTube Thumbnails Evaluation,"Roshan Sapkota, Daniel Ghebreyesus, Abhinav Sriram, Matthew Yee",16
+,Image Denoising using autoencoders,"Peter Curtin, Daniel Healey, Luke Hammer",38
+,Image Colorization,"Benjamin Duong, Seyit Metin Barut, Yaoqi Pang, Zahra Naqvi",74
+,Real-time ASL Fingerspelling Recognition,"Kyle Lam, Jennifer Li, Claire Yang, and Grace Wan",1
+,SeeNN,"Indiamei Gold-Coren, Arushi Kalpande, Wyatt Woodbery, Gus LeTourneau",
+,Panda or Gibbon? Adversarial Attacks,"Tyler Forman, Luke Choi, John Zou, Anthony Kang",
+,,,
+11:00 AM,Session 2: San Fransisco - Language Processing (17 projects) [4+11],Judge for talks: Prof. Shekhar Prasad,
+11:00 AM,Assembly to C Translation,"Andrew Yang, Tiger Ji, Frank Chiu, Justin Cheng",60
+11:12 AM,bulkyBERT,"Cecile Meier-Scherling, Julian Stamp, Blake Hansen",62
+11:24 AM,Probing the dynamics of word embeddings and prompt completions using time-sliced training of language models,"Roman Hall, Zaul Tavangar, Gopal Iyer",51
+11:36 AM,An Analysis of Political Bias Through Title Generation,"Isaac Wecht, Sagar Raichandani, Liam Pan",
+11:48 AM,Poster session (Parallel),,
+,Bias Analysis on Media,"Nicholas Yarnall, Amogh Parmeswaran, Ayush Gupta",48
+,Multimodal VQA Using Pretrained Experts,"Heon Lee, Ilana Nguyen, Kelvin Jiang",11
+,UnCAPTCHA,"Charlie Clynes, Mahlon Page, Eva Schiller",36
+,Cogito Brunésum,"Gabrielle Shieh, Nolan Serbent, Jonathan Goshu, Nolan Serbent",34
+,Not ChatGPT,"Mary Regan, Anand Advani",35
+,Predicting Tweet Reply Sentiment Based on Tweets,"Anna Novatney, Jay Lin, Hunter Adrian, Darren Fang ",33
+,Emotion Classification in Speech Using Deep Neural Networks,"Annabelle Gao, Stephen Pyon",25
+,Sarcasm Detection: The Best Deep Learning Project Ever Created,"Mark Miller, Rahel Selemon, Ephraim Gould",31
+,Text to Emoji Prediction,"Anna Ohrt,Amanda Hernandez Sandate,Lilly Schroeder ",32
+,Keep It On the DL,"Jennifer Wang, Emily Wang, Calvin Eng, Isha Mody",22
+,A new heuristic for fake news: Formal Language Analysis,"Muhiim Ali, Luoyun Wang, David Doan, Indigo Funk ",17
+,Hotel Ratings Predictor,"Ahmed Amin, Justen Joffe, Mahir Arora",
+,Team FAQer,"Aryan Singh, Preetish Juneja, Spandan Goel, Kyle Yeh",
+,,,
+12:30 PM,Session 3: Boston - Science and Health (19 projects) [7+12],Judge for talks: Michal Golovanevsky,
+12:30 PM,Weakly Supervised Whole-Slide Cell Images Segmentation,"Yiyang Nan, Minghui Ke, Junyi Zhu, Xufan Wang",64
+12:42 PM,Predicting Transcription Factor Binding from DNA Sequences,"Joseph Aguilera, Bryan Natividad, Nigel Anderson, Connor Staggs",70
+12:54 PM,SenID: Senescent Cell Identification,"Anthony Agudelo, Matt Murakami, Nikolai Stambler",69
+1:06 PM,Detecting Heavy Drinking Episodes Using Deep Learning Techniques on Smartphone Accelerometer Data,"Muskaan Patel, Sarah Prakriti Peters, Amrit Singh Rana",56
+1:18 PM,Cellular age classification in the hypothalamus,"Ananya, Jessy, Tuan",61
+1:30 PM,TCN for Neural Decoding,"Ewina, Rekha, Stefan",71
+1:42 PM,OrgoNet: 3D Modeling of Complex Organic Compounds Using DNN,"Niko Bhatia, Ugo Piovan, Manuel Lopez, Cameron Fiore",
+1:54 PM,Poster session (Parallel),,
+,Tumor classification through CNN,"Toshiki Kato, Raphael Li, Alexander Zheng",10
+,Using convolutional neural networks to diagnose melanoma-presenting skin growths.,"Jeremy Lum, Sean Yu, Kristen Cai, Thomas Bui",41
+,CNN-Bi-LSTM for SARS CoV-2 Classification,"Corinn Tiffany, Aidan Harbison, Zyn Yee Ang, Rachel Chae",42
+,Terraforming with Pix2Pix and elevation maps,"Julian Dai, Taj Gillin, Eric Xia",20
+,Pediatric bone age regression (Team Bones),"Mitchell Salomon, Joel Kim, Andrew Xu",18
+,Computational Recognition and Prediction of Epileptic Seizure Dynamics in Electroencephalograms: A Multi-Model Comparison.,"Luke Briody, Eugene Oh, Samantha Minars, Sophie Ljung",26
+,Saguaro Identification,"Matthew Prenovitz, Ty Pham-Swann, Jacob Wilner",4
+,Brain Tumor Imaging,"Daniel Cho, Kameel Dossal, David Han, Erica Song",2
+,Wildfire Spread Prediction Model,"Henry Earnest,James Hu,Rishi Patel",15
+,Bone jour!,"Byron Butaney, Chloe Ye, Thu Luu",3
+,Prosthetic AI (Bi Dex Hands),"Will Havens, Arata Fujii, Siddharth Boppana",45
+,Deep Learning Model for Efficient Diagnosis of Narcolepsy,"Afnan Nuruzzaman, Muhammad Omer Chaudhry, Musa Tahir, Seong-Heon Jung",
+,,,
+,,,
+2:30 PM,"Session 4: New York - Art, Music, Fashion, Finance, and everything else (19 projects) [4+15]",Judge for talks: Atishay Jain,
+2:30 PM,DeepHAM: Applying Deep Learning and Reduction Peeling to Determine Optimal Heuristics for Finding Hamiltonian Paths,"Edward Bielawa, Hammad Izhar, Joseph Rotella",53
+2:42 PM,Gender bias in children's fairy tales,"Ran An, Li Feng, Selina Wang",68
+2:54 PM,Deep Causal Policy Learning,Juan Yamin Silva,65
+3:06 PM,Fashion Forward,"Juefei Chen, Yurui Zhang, Yang Zheng",57
+3:18 PM,Music Genre Classification using Transformers from Tensorflow,"Burke O’Brien, Julia Lynn, Michelle Motley",
+3:30 PM,Poster session (Parallel),,
+,Meter-aware Mandarin to English Poetry Translation Model.,"Thomas Styron, Yi-Hao Tan, James Scherick, Justin Anagonye-Bahn",28
+,poe-m,"Sedong Hwang, Akira Nair, Christine Jeong",5
+,UnRembrandt,"Daniel Wang, Harys Dalvi, Sebastian Park",9
+,Ghibli Image Style Transfer,"Ariana Codjoe, Lynda Winnie Umuhoza, Haruka Masamura, Alexandra Floru",23
+,Texture synthesis with CNN,"Mohammed Khan, Gabriel Mahler, Frank Carber",30
+,Melody Morpher,"Trevor Wiedmann, Kiera Walsh, Jennifer Chen, Caroline Zhang",21
+,Trading Bot ,"Arman Mohammadi, Mohammad Hijaz, Amin Hijaz",6
+,DeepSolve: Using Neural Networks to solve Poker,"Jason Silva,Torsten Ullrich,Ken Ngamprasertsith",50
+,Stock Predictor,"Courtney Tse, Syon Khosla, Noah Atanda, Lafayette Bussey",19
+,Paint Me Like One of your French Girls,"Antonio Cortabarria, Cannon Caspar, William Van de Walle, Santiago Cortabarria",44
+,Poetic Prodigy - Personalized Poetry Generator,"Aanya Hudda, Katherine Mao, Mason Zhang, Tabitha Lynn",13
+,Time Series forcasting with RNNs ,"Kleo Ku, Alexandra von der Gotz, Ben Piekarz",27
+,Music Mood Ring,"Alice Min, Lucy Gramley, Mikayla Walsh",52
+,Wolves of Meeting Street,"Alexander Adams, Ivan Sung, Henry Powers",
+,,,
+,,,
+4:00 PM,Closing Remarks,,
+,,,
+10,Minutes for opening remarks,,
+12,Minutes per presentation (10 min talk + setup + Q/A),,
+30,Minutes per poster cluster,,
