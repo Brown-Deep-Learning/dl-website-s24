@@ -81,6 +81,25 @@ td {
 }
 
 a {
-  color: #d74;
+  color: #6868ac;
   text-decoration: underline;
+}
+
+.text-accent {
+  color: #6868ac;
+}
+
+.border-accent {
+  border-color: #6868ac;
+}
+
+.accent-button {
+  border-width: 1px;
+  border-color: #6868ac;
+}
+
+.accent-button:hover {
+  background-color: #6868ac;
+  color: rgb(241 245 249);
+  cursor: pointer;
 }

@@ -8,6 +8,7 @@
       content="CSCI 1470/2470 - Deep Learning | Brown University"
     />
     <title>CS1470 - Deep Learning | Brown University</title>
+    <link rel="icon" type="image/x-icon" href="images/favicon.png">
   </head>
   <body class="text-sm md:text-base overflow-x-hidden">
     <div id="scene" class="fixed -z-50 top-0"></div>
@@ -32,7 +33,7 @@
           <a class="no-underline" href="#home">
             <button
               id="dive-in-button"
-              class="flex flex-col items-center px-6 py-3 frosted-clear w-fit mb-12"
+              class="flex flex-col items-center px-6 py-3 frosted-clear w-fit mb-12 rounded-lg"
             >
               <div class="text-md md:text-xl font-bold text-slate-50">
                 DIVE IN
@@ -56,7 +57,9 @@
             <h1
               class="flex-none text-2xl md:text-4xl font-semibold text-slate-600"
             >
-              Deep Learning
+            <a class="no-underline block text-slate-600" href="#home"
+            >Deep Learning</a
+          >
             </h1>
             <button
               id="menu-button"
@@ -67,16 +70,6 @@
           </div>
           <nav id="nav" class="nav hidden lg:block mb-4 lg:mb-0">
             <ul class="flex flex-col lg:flex-row gap-4 lg:gap-8 text-xl">
-              <li>
-                <a class="no-underline block hover:underline" href="#home"
-                  >Home</a
-                >
-              </li>
-              <li>
-                <a class="no-underline block hover:underline" href="pages/dlday/"
-                  >DL Day</a
-                >
-              </li>
               <li>
                 <a class="no-underline block hover:underline" href="#lectures"
                   >Lectures</a
@@ -206,6 +199,79 @@
                 </div>
               </div>
             </section>
+            <section id="current" class="flex flex-col gap-6 pt-32">
+              <h2 class="text-3xl md:text-4xl font-semibold">The Latest</h2>
+              <div class="flex flex-col gap-4">
+                <div
+                  class="overflow-scroll lg:overflow-hidden flex flex-col gap-8"
+                >
+                <div
+                class="grid grid-cols-1 xs:grid-cols-2 md:grid-cols-3 gap-4 w-full pb-6"
+                >
+                <div class="flex flex-col gap-2">
+                  <h3 class="text-2xl font-medium">Lecture</h3>
+                    <div class="flex flex-col frosted rounded-lg">
+                      <div class="p-4">
+                        <div class="text-md font-medium mb-2">Welcome to Deep Learning</div>
+                        <div class="flex flex-row gap-4">
+                          <a class="flex flex-row gap-2 px-2 py-1 items-center rounded-lg no-underline accent-button">
+                            <img src="images/recording.png" class="w-4 h-4"/>
+                            <div class="text-sm">
+                              Recording
+                            </div>
+                          </a>
+                          <a class="flex flex-row gap-2 px-2 py-1 items-center rounded-lg no-underline accent-button">
+                            <img src="images/slides.png" class="w-3 h-4"/>
+                            <div class="text-sm no-underline">
+                              Slides
+                            </div>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                </div>
+                <div class="flex flex-col gap-2">
+                  <h3 class="text-2xl font-medium">Homework</h3>
+                    <div class="flex flex-col gap-3">
+                      <a href="#assignments"
+                      class="frosted rounded-lg p-4 hover:shadow-lg hover:cursor-pointer no-underline">
+                        <div class="text-sm text-slate-400"> Conceptual </div>
+                        <div class="flex flex-row justify-between items-center">
+                          <div class="text-md font-medium text-slate-600">Math Review</div>
+                          <div class="text-sm text-accent">
+                            Ungraded
+                          </div>
+                          </div>
+                        </a>
+                      <a href="#assignments"
+                      class="frosted rounded-lg p-4 hover:shadow-lg hover:cursor-pointer no-underline">
+                        <div class="text-sm text-slate-400"> Programming </div>
+                        <div class="flex flex-row justify-between items-center">
+                          <div class="text-md font-medium text-slate-600">Setup</div>
+                          <div class="text-sm text-accent">
+                            Due Friday 2/2
+                          </div>
+                          </div>
+                        </a>
+                    </div>
+                  </div>
+                <div class="flex flex-col gap-2">
+                  <h3 class="text-2xl font-medium">Lab</h3>
+                    <a href="#labs" class="flex flex-col frosted rounded-lg hover:shadow-lg hover:cursor-pointer no-underline">
+                      <div class="p-4">
+                        <div class="text-md font-medium text-slate-600">Intro to Numpy</div>
+                        <div class="flex flex-row gap-5">
+                          <div class="text-sm text-accent">
+                            No checkoff
+                          </div>
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            </section>
             <section id="lectures" class="flex flex-col gap-6 pt-32">
               <h2 class="text-3xl md:text-4xl font-semibold">Lectures</h2>
               <div class="flex flex-col gap-4">
@@ -227,632 +293,354 @@
                         <th class="min-w-[96px]"></th>
                         <th></th>
                         <th class="min-w-[96px]"></th>
-                        <th class="min-w-[96px]"></th>
                       </tr>
                     </thead>
                     <tbody>
                       <tr class="font-semibold">
-                        <td>[Week 1-4]</td>
+                        <td>Week 1-4</td>
                         <td>Deep Learning Basics</td>
                         <td></td>
-                        <td></td>
                       </tr>
                       <tr>
-                        <td><b>[1-2]</b> 1/25</td>
+                        <td>1/24</td>
                         <td>Welcome to Deep Learning</td>
                         <td>
-                          <a
-                            target="_blank"
-                            href="https://brown.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=e248d14f-0244-428f-9db5-af8d013412e3"
-                            >Recording</a
-                          >
-                        </td>
-                        <td>
-                          <a target="_blank" href="slides/lecture1.pdf"
-                            >Slides</a
-                          >
+                          <div class="flex flex-row gap-2">
+                            <a class="flex flex-row gap-2 px-2 py-1 items-center rounded-lg no-underline accent-button">
+                              <img src="images/recording.png" class="w-4 h-4"/>
+                              <div class="text-sm">
+                                Recording
+                              </div>
+                            </a>
+                            <a class="flex flex-row gap-2 px-2 py-1 items-center rounded-lg no-underline accent-button">
+                              <img src="images/slides.png" class="w-3 h-4"/>
+                              <div class="text-sm no-underline">
+                                Slides
+                              </div>
+                            </a>
+                          </div>
                         </td>
                       </tr>
                       <tr>
-                        <td><b>[1-3]</b> 1/27</td>
+                        <td>1/26</td>
                         <td>
                           Supervised Learning - Classification/Regression,
                           Training/Validation/Testing
                         </td>
                         <td>
-                          <a
-                            target="_blank"
-                            href="https://brown.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=7b3ae899-ab37-4822-8bb7-af9a012ed1b8"
-                            >Recording</a
-                          >
                         </td>
                         <td>
-                          <a target="_blank" href="slides/lecture2.pdf"
-                            >Slides</a
-                          >
                         </td>
                       </tr>
                       <tr>
-                        <td><b>[2-1]</b> 1/30</td>
+                        <td>1/29</td>
                         <td>Perceptron and MNIST</td>
                         <td>
-                          <a
-                            target="_blank"
-                            href="https://brown.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=6ef1073d-ec78-41b6-9b36-af8d013413c4"
-                            >Recording</a
-                          >
                         </td>
                         <td>
-                          <a target="_blank" href="slides/lecture3.pdf"
-                            >Slides</a
-                          >
                         </td>
                       </tr>
                       <tr>
-                        <td><b>[2-2]</b> 2/1</td>
+                        <td>1/31</td>
                         <td>Perceptron (continued) and Loss Functions</td>
                         <td>
-                          <a
-                            target="_blank"
-                            href="https://brown.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=be9197b3-5ea4-49bb-a1cd-af9a0116ec55"
-                            >Recording</a
-                          >
                         </td>
                         <td>
-                          <a target="_blank" href="slides/lecture4.pdf"
-                            >Slides</a
-                          >
                         </td>
                       </tr>
                       <tr>
-                        <td><b>[2-3]</b> 2/3</td>
+                        <td>2/2</td>
                         <td>Optimization and Backpropagation</td>
                         <td>
-                          <a
-                            target="_blank"
-                            href="https://brown.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=d5ea04b8-b1a6-4881-b13d-af9a0116eca6"
-                            >Recording</a
-                          >
                         </td>
                         <td>
-                          <a target="_blank" href="slides/lecture5.pdf"
-                            >Slides</a
-                          >
                         </td>
                       </tr>
                       <tr>
-                        <td><b>[3-1]</b> 2/6</td>
+                        <td>2/5</td>
                         <td>Backpropagation (continued)</td>
                         <td>
-                          <a
-                            target="_blank"
-                            href="https://brown.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=cb842135-b687-40d6-9c62-af9a0116ecc3"
-                            >Recording</a
-                          >
                         </td>
                         <td>
-                          <a target="_blank" href="slides/lecture6.pdf"
-                            >Slides</a
-                          >
                         </td>
                       </tr>
                       <tr>
-                        <td><b>[3-2]</b> 2/8</td>
+                        <td>2/7</td>
                         <td>Autodiff</td>
                         <td>
-                          <a
-                            target="_blank"
-                            href="https://brown.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=ad556885-e682-43c5-8019-af9a0116ecdf"
-                            >Recording</a
-                          >
                         </td>
                         <td>
-                          <a target="_blank" href="slides/lecture7.pdf"
-                            >Slides</a
-                          >
                         </td>
                       </tr>
                       <tr>
-                        <td><b>[3-3]</b> 2/10</td>
+                        <td>2/9</td>
                         <td>
                           Matrix representation of NNs + GPUs + Intro to
                           Tensorflow
                         </td>
                         <td>
-                          <a
-                            target="_blank"
-                            href="https://brown.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=507abe17-e1fb-4ae9-8393-af9a0116ed08"
-                            >Recording</a
-                          >
                         </td>
                         <td>
-                          <a target="_blank" href="slides/lecture8.pdf"
-                            >Slides</a
-                          >
                         </td>
                       </tr>
                       <tr>
-                        <td><b>[4-1]</b> 2/13</td>
+                        <td>2/12</td>
                         <td>Multi-layer NNs and Activation Functions</td>
                         <td>
-                          <a
-                            target="_blank"
-                            href="https://brown.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=233b5663-0ed0-4a77-94dd-af9a0116ed25"
-                            >Recording</a
-                          >
                         </td>
                         <td>
-                          <a target="_blank" href="slides/lecture9.pdf"
-                            >Slides</a
-                          >
                         </td>
                       </tr>
                       <tr>
-                        <td><b>[4-2]</b> 2/15</td>
+                        <td>2/14</td>
                         <td>The Lifecycle of a Machine Learning Project</td>
                         <td>
-                          <a
-                            target="_blank"
-                            href="https://brown.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=9119d343-2a2a-47ba-972d-afa901426316"
-                            >Recording</a
-                          >
                         </td>
                         <td>
-                          <a target="_blank" href="slides/lecture10.pdf"
-                            >Slides</a
-                          >
                         </td>
                       </tr>
                       <tr class="font-semibold">
-                        <td>[Week 4-6]</td>
+                        <td>Week 4-6</td>
                         <td>CNNs</td>
                         <td></td>
                         <td></td>
                       </tr>
                       <tr>
-                        <td><b>[4-3]</b> 2/17</td>
+                        <td>2/16</td>
                         <td>Multi-layer NNs (contd.) + Intro to CNNs</td>
                         <td>
-                          <a
-                            target="_blank"
-                            href="https://brown.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=97a5805f-c349-4088-a1a7-af9a0116ed66"
-                            >Recording</a
-                          >
                         </td>
                         <td>
-                          <a target="_blank" href="slides/lecture11.pdf"
-                            >Slides</a
-                          >
                         </td>
                       </tr>
                       <tr>
-                        <td><b>[5-2]</b> 2/22</td>
+                        <td>2/21</td>
                         <td>CNNs (contd.)</td>
                         <td>
-                          <a
-                            target="_blank"
-                            href="https://brown.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=62b1d555-0a90-40d5-b79a-af9a0116eda8"
-                            >Recording</a
-                          >
                         </td>
                         <td>
-                          <a target="_blank" href="slides/lecture12.pdf"
-                            >Slides</a
-                          >
                         </td>
                       </tr>
                       <tr>
-                        <td><b>[5-3]</b> 2/24</td>
+                        <td>2/23</td>
                         <td>Multi-layer CNNs</td>
                         <td>
-                          <a
-                            target="_blank"
-                            href="https://brown.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=aef25642-7ede-4c94-8dd0-af9a0116edc8"
-                            >Recording</a
-                          >
                         </td>
                         <td>
-                          <a target="_blank" href="slides/lecture13.pdf"
-                            >Slides</a
-                          >
                         </td>
                       </tr>
                       <tr>
-                        <td><b>[6-1]</b> 2/27</td>
+                        <td>2/26</td>
                         <td>Overfitting and regularization</td>
                         <td>
-                          <a
-                            target="_blank"
-                            href="https://brown.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=9808b99f-55c3-439e-b021-af9a0116eded"
-                            >Recording</a
-                          >
                         </td>
                         <td>
-                          <a target="_blank" href="slides/lecture14.pdf"
-                            >Slides</a
-                          >
                         </td>
                       </tr>
                       <tr class="font-semibold">
-                        <td>[Week 6-9]</td>
+                        <td>Week 6-9</td>
                         <td>Language Models</td>
                         <td></td>
                         <td></td>
                       </tr>
                       <tr>
-                        <td><b>[6-2]</b> 3/1</td>
+                        <td>2/28</td>
                         <td>Language models and word embeddings</td>
                         <td>
-                          <a
-                            target="_blank"
-                            href="https://brown.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=94a4fe8f-87cb-4281-9f45-af9a0116ee12"
-                            >Recording</a
-                          >
                         </td>
                         <td>
-                          <a target="_blank" href="slides/lecture15.pdf"
-                            >Slides</a
-                          >
                         </td>
                       </tr>
                       <tr>
-                        <td><b>[6-3]</b> 3/3</td>
+                        <td>3/1</td>
                         <td>Feedforward language models</td>
                         <td>
-                          <a
-                            target="_blank"
-                            href="https://brown.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=1a4fba12-478f-47ed-907d-af9a0116ee3c"
-                            >Recording</a
-                          >
                         </td>
                         <td>
-                          <a target="_blank" href="slides/lecture16.pdf"
-                            >Slides</a
-                          >
                         </td>
                       </tr>
                       <tr>
-                        <td><b>[7-1]</b> 3/6</td>
+                        <td>3/4</td>
                         <td>Recurrent neural networks</td>
                         <td>
-                          <a
-                            target="_blank"
-                            href="https://brown.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=0de9effb-d8f4-4164-88b1-af9a0116ee67"
-                            >Recording</a
-                          >
                         </td>
                         <td>
-                          <a target="_blank" href="slides/lecture17.pdf"
-                            >Slides</a
-                          >
                         </td>
                       </tr>
                       <tr>
-                        <td><b>[7-2]</b> 3/8</td>
+                        <td>3/6</td>
                         <td>LSTMs and GRUs</td>
                         <td>
-                          <a
-                            target="_blank"
-                            href="https://brown.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=794d34a8-6b38-4562-95c0-af9a0116ee9d"
-                            >Recording</a
-                          >
                         </td>
                         <td>
-                          <a target="_blank" href="slides/lecture18.pdf"
-                            >Slides</a
-                          >
                         </td>
                       </tr>
                       <tr>
-                        <td><b>[7-3]</b> 3/10</td>
+                        <td>3/8</td>
                         <td>Machine translation</td>
                         <td>
-                          <a
-                            target="_blank"
-                            href="https://brown.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=4db7a296-186d-47a9-a12a-af9a0116eec9"
-                            >Recording</a
-                          >
                         </td>
                         <td>
-                          <a target="_blank" href="slides/lecture19.pdf"
-                            >Slides</a
-                          >
                         </td>
                       </tr>
                       <tr>
-                        <td><b>[8-1]</b> 3/13</td>
+                        <td>3/11</td>
                         <td>Attention</td>
                         <td>
-                          <a
-                            target="_blank"
-                            href="https://brown.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=eed42db3-8d15-4c70-9409-af9a0116eee9"
-                            >Recording</a
-                          >
                         </td>
                         <td>
-                          <a target="_blank" href="slides/lecture20.pdf"
-                            >Slides</a
-                          >
                         </td>
                       </tr>
                       <tr>
-                        <td><b>[8-2]</b> 3/15</td>
+                        <td>3/13</td>
                         <td>Transformers</td>
                         <td>
-                          <a
-                            target="_blank"
-                            href="https://brown.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=0fa68f78-b7bf-4364-9001-af9a0116ef4f"
-                            >Recording</a
-                          >
                         </td>
                         <td>
-                          <a target="_blank" href="slides/lecture21.pdf"
-                            >Slides</a
-                          >
                         </td>
                       </tr>
                       <tr>
-                        <td><b>[8-3]</b> 3/17</td>
+                        <td>3/15</td>
                         <td>Transformers (continued) and scaling deep learning systems</td>
                         <td>
-                          <a
-                            target="_blank"
-                            href="https://brown.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=f5322a43-ddc1-4f6f-8d04-af9a0116ef6d"
-                            >Recording</a
-                          >
                         </td>
                         <td>
-                          <a target="_blank" href="slides/lecture22.pdf"
-                            >Slides</a
-                          >
                         </td>
                       </tr>
                       <tr>
-                        <td><b>[9-1]</b> 3/20</td>
+                        <td>3/18</td>
                         <td>Scaling deep learning systems continued.</td>
                         <td>
-                          <a
-                            target="_blank"
-                            href="https://brown.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=80297394-ea8d-4952-bada-af9a0116ef8a"
-                            >Recording</a
-                          >
                         </td>
                         <td>
-                          <a target="_blank" href="slides/lecture23.pdf"
-                            >Slides</a
-                          >
                         </td>
                       </tr>
                       <tr class="font-semibold">
-                        <td>[Week 9]</td>
+                        <td>Week 9</td>
                         <td>Interpretation</td>
                         <td></td>
                         <td></td>
                       </tr>
                       <tr>
-                        <td><b>[9-2]</b> 3/22</td>
+                        <td>3/20</td>
                         <td>Interpretation of Neural Networks</td>
                         <td>
-                          <a
-                            target="_blank"
-                            href="https://brown.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=37ed4c25-1b79-4dee-a1f0-af9a0116efa6"
-                            >Recording</a
-                          >
                         </td>
                         <td>
-                          <a target="_blank" href="slides/lecture24.pdf"
-                            >Slides</a
-                          >
                         </td>
                       </tr>
                       <tr class="font-semibold">
-                        <td>[Week 10-11]</td>
+                        <td>Week 10-11</td>
                         <td>Probabilistic Models</td>
                         <td></td>
                         <td></td>
                       </tr>
                       <tr>
-                        <td><b>[10-1]</b> 4/3</td>
+                        <td>4/1</td>
                         <td>Unsupervised learning, Autoencoders</td>
                         <td>
-                          <a
-                            target="_blank"
-                            href="https://brown.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=cc59675b-a157-4a26-8c38-af9a0116f047"
-                            >Recording</a
-                          >
                         </td>
                         <td>
-                          <a target="_blank" href="slides/lecture25.pdf"
-                            >Slides</a
-                          >
                         </td>
                       </tr>
                       <tr>
-                        <td><b>[10-2]</b> 4/5</td>
+                        <td>4/3</td>
                         <td>Variational Autoencoders</td>
                         <td>
-                          <a
-                            target="_blank"
-                            href="https://brown.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=ff948b7c-16d9-46ac-bdf8-af9a0116f061"
-                            >Recording</a
-                          >
                         </td>
                         <td>
-                          <a target="_blank" href="slides/lecture26.pdf"
-                            >Slides</a
-                          >
                         </td>
                       </tr>
                       <tr>
-                        <td><b>[10-3]</b> 4/7</td>
+                        <td>4/5</td>
                         <td>VAEs contd. and Generative adversarial networks</td>
                         <td>
-                          <a
-                            target="_blank"
-                            href="https://brown.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=162112e2-3784-49ff-956a-af9a0116f077"
-                            >Recording</a
-                          >
                         </td>
                         <td>
-                          <a target="_blank" href="slides/lecture27.pdf"
-                            >Slides</a
-                          >
                         </td>
                       </tr>
                       <tr>
-                        <td><b>[11-1]</b> 4/10</td>
+                        <td>4/8</td>
                         <td>VAE and GANs contd + Deepfakes</td>
                         <td>
-                          <a
-                            target="_blank"
-                            href="https://brown.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=74a04fdd-f0b8-4c25-baaa-af9a0116f08f"
-                            >Recording</a
-                          >
                         </td>
                         <td>
-                          <a target="_blank" href="slides/lecture28.pdf"
-                            >Slides</a
-                          >
                         </td>
                       </tr>
                       <tr>
-                        <td><b>[11-2]</b> 4/12</td>
+                        <td>4/10</td>
                         <td>Diffusion (guest lecture by Calvin Luo)</td>
                         <td>
-                          <a
-                            target="_blank"
-                            href="https://brown.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=e4c0175b-6450-4a61-83e6-af9a0116f0ab"
-                            >Recording</a
-                          >
                         </td>
                         <td>
-                          <a target="_blank" href="slides/lecture29.pdf"
-                            >Slides</a
-                          >
                         </td>
                       </tr>
                       <tr>
-                        <td><b>[11-3]</b> 4/14</td>
+                        <td>4/12</td>
                         <td>Diffusion continued (guest lecture by Calvin Luo)</td>
                         <td>
-                          <a
-                            target="_blank"
-                            href="https://brown.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=d34df164-6bcc-4c28-852b-af9a0116f0d7"
-                            >Recording</a
-                          >
                         </td>
                         <td>
-                          <a target="_blank" href="slides/lecture30.pdf"
-                            >Slides</a
-                          >
                         </td>
                       </tr>
                       <tr class="font-semibold">
-                        <td>[Week 12-13]</td>
+                        <td>Week 12-13</td>
                         <td>Reinforcement Learning</td>
                         <td></td>
                         <td></td>
                       </tr>
                       <tr>
-                        <td><b>[12-1]</b> 4/17</td>
+                        <td>4/15</td>
                         <td>Introduction to reinforcement learning</td>
                         <td>
-                          <a
-                            target="_blank"
-                            href="https://brown.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=2c6e9278-ecab-42a9-8705-af9a0116f0ef"
-                            >Recording</a
-                          >
                         </td>
                         <td>
-                          <a target="_blank" href="slides/lecture31.pdf"
-                            >Slides</a
-                          >
                         </td>
                       </tr>
                       <tr>
-                        <td><b>[12-2]</b> 4/19</td>
+                        <td>4/17</td>
                         <td>Value Iteration</td>
                         <td>
-                          <a
-                            target="_blank"
-                            href="https://brown.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=d1650e08-47f8-4030-84cd-af9a0116f107"
-                            >Recording</a
-                          >
                         </td>
                         <td>
-                          <a target="_blank" href="slides/lecture32.pdf"
-                            >Slides</a
-                          >
                         </td>
                       </tr>
                       <tr>
-                        <td><b>[12-3]</b> 4/21</td>
+                        <td>4/19</td>
                         <td>Deep Q learning</td>
                         <td>
-                          <a
-                            target="_blank"
-                            href="https://brown.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=c2f2d47e-ba9c-42b5-908a-af9a0116f122"
-                            >Recording</a
-                          >
                         </td>
                         <td>
-                          <a target="_blank" href="slides/lecture33.pdf"
-                            >Slides</a
-                          >
                         </td>
                       </tr>
                       <tr>
-                        <td><b>[13-1]</b> 4/24</td>
+                        <td>4/22</td>
                         <td>Policy gradient methods</td>
                         <td>
-                          <a
-                            target="_blank"
-                            href="https://brown.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=68bbb194-4178-43c1-8a5b-af9a0116f13f"
-                            >Recording</a
-                          >
                         </td>
                         <td>
-                          <a target="_blank" href="slides/lecture34.pdf"
-                            >Slides</a
-                          >
                         </td>
                       </tr>
                       <tr>
-                        <td><b>[13-2]</b> 4/26</td>
+                        <td>4/24</td>
                         <td>Actor-critic methods</td>
                         <td>
-                          <a
-                            target="_blank"
-                            href="https://brown.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=3e3797bb-35cd-4469-b00c-af9a0116f15a"
-                            >Recording</a
-                          >
                         </td>
                         <td>
-                          <a target="_blank" href="slides/lecture35.pdf"
-                            >Slides</a
-                          >
                         </td>
                       </tr>
                       <tr class="font-semibold">
-                        <td>[Week 13]</td>
+                        <td>Week 13</td>
                         <td>GNNs</td>
                         <td></td>
                         <td></td>
                       </tr>
                       <tr>
-                        <td><b>[13-3]</b> 4/28</td>
+                        <td>4/26</td>
                         <td>Graph neural networks</td>
                         <td>
-                          <a
-                            target="_blank"
-                            href="https://brown.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=3e3797bb-35cd-4469-b00c-af9a0116f15a"
-                            >Recording</a
-                          >
                         </td>
                         <td>
-                          <a target="_blank" href="slides/lecture36.pdf"
-                            >Slides</a
-                          >
                         </td>
                       </tr>
                     </tbody>
@@ -884,176 +672,130 @@
                     </thead>
                     <tbody>
                       <tr>
-                        <td><b>[HW0]</b></td>
+                        <td><b>0C</b></td>
                         <td>
-                          <a
-                            target="_blank"
-                            href="https://hackmd.io/@BrownDeepLearningS23/hw0p"
-                            >Setup</a
-                          >
-                        </td>
-                        <td>Wednesday 1/25</td>
-                        <td>Friday 2/3</td>
-                      </tr>
-                      <tr>
-                        <td><b>[HW0]</b></td>
-                        <td>
-                          <a
+                          <a hidden
                             target="_blank"
                             href="https://hackmd.io/@BrownDeepLearningS23/hw0c"
                             >Math Review</a
                           >
+                          Math Review
                         </td>
-                        <td>Wednesday 1/25</td>
-                        <td>Friday 2/3</td>
+                        <td>Wednesday 1/24</td>
+                        <td>Friday 2/2</td>
                       </tr>
                       <tr>
-                        <td><b>[HW1]</b></td>
+                        <td><b>0P</b></td>
                         <td>
-                          <a
+                          <a hidden
                             target="_blank"
-                            href="https://hackmd.io/@BrownDeepLearningS23/hw1c"
-                            >Linear Regression: Conceptual</a
+                            href="https://hackmd.io/@BrownDeepLearningS23/hw0p"
+                            >Setup</a
                           >
+                          Setup
                         </td>
-                        <td>Wednesday 2/1</td>
-                        <td>Friday 2/10</td>
+                        <td>Wednesday 1/24</td>
+                        <td>Friday 2/2</td>
                       </tr>
                       <tr>
-                        <td><b>[HW1]</b></td>
+                        <td><b>1C</b></td>
                         <td>
-                          <a
-                            target="_blank"
-                            href="https://hackmd.io/@BrownDeepLearningS23/hw1p"
-                            >Linear Regression: Programming</a
-                          >
+                          Linear Regression: Conceptual
                         </td>
-                        <td>Wednesday 2/1</td>
-                        <td>Monday 2/13</td>
+                        <td>Wednesday 1/31</td>
+                        <td>Friday 2/9</td>
                       </tr>
                       <tr>
-                        <td><b>[HW2]</b></td>
+                        <td><b>1P</b></td>
                         <td>
-                          <a
-                            target="_blank"
-                            href="https://hackmd.io/@BrownDeepLearningS23/hw2c"
-                            >Beras: Conceptual</a
-                          >
+                          Linear Regression: Programming
                         </td>
-                        <td>Wednesday 2/15</td>
-                        <td>Friday 2/24</td>
+                        <td>Wednesday 1/31</td>
+                        <td>Monday 2/12</td>
                       </tr>
                       <tr>
-                        <td><b>[HW2]</b></td>
+                        <td><b>2C</b></td>
                         <td>
-                          <a
-                            target="_blank"
-                            href="https://hackmd.io/@BrownDeepLearningS23/hw2p"
-                            >Beras: Programming</a
-                          >
+                          Beras: Conceptual
                         </td>
-                        <td>Wednesday 2/15</td>
-                        <td>Monday 2/27</td>
+                        <td>Wednesday 2/14</td>
+                        <td>Friday 2/23</td>
                       </tr>
                       <tr>
-                        <td><b>[HW3]</b></td>
+                        <td><b>2P</b></td>
                         <td>
-                          <a
-                            target="_blank"
-                            href="https://hackmd.io/@BrownDeepLearningS23/hw3c"
-                            >CNNs: Conceptual</a
-                          >
+                          Beras: Programming
                         </td>
-                        <td>Wednesday 3/1</td>
-                        <td>Monday 3/6</td>
+                        <td>Wednesday 2/14</td>
+                        <td>Monday 2/26</td>
                       </tr>
                       <tr>
-                        <td><b>[HW3]</b></td>
+                        <td><b>3C</b></td>
                         <td>
-                          <a
-                            target="_blank"
-                            href="https://hackmd.io/@BrownDeepLearningS23/hw3p"
-                            >CNNs: Programming</a
-                          >
+                          CNNs: Conceptual
                         </td>
-                        <td>Wednesday 3/1</td>
-                        <td>Friday 3/10</td>
+                        <td>Wednesday 2/28</td>
+                        <td>Monday 3/4</td>
                       </tr>
                       <tr>
-                        <td><b>[HW4]</b></td>
+                        <td><b>3P</b></td>
                         <td>
-                          <a
-                            target="_blank"
-                            href="https://hackmd.io/@BrownDeepLearningS23/hw4c"
-                            >LMs: Conceptual</a
-                          >
+                          CNNs: Programming
                         </td>
-                        <td>Wednesday 3/13</td>
-                        <td>Monday 3/20</td>
+                        <td>Wednesday 2/28</td>
+                        <td>Friday 3/8</td>
                       </tr>
                       <tr>
-                        <td><b>[HW4]</b></td>
+                        <td><b>4C</b></td>
                         <td>
-                          <a
-                            target="_blank"
-                            href="https://hackmd.io/@BrownDeepLearningS23/hw4p"
-                            >LMs: Programming</a
-                          >
+                          LMs: Conceptual
                         </td>
-                        <td>Wednesday 3/13</td>
-                        <td>Friday 3/24</td>
+                        <td>Wednesday 3/11</td>
+                        <td>Monday 3/18</td>
                       </tr>
                       <tr>
-                        <td><b>[HW5]</b></td>
+                        <td><b>4P</b></td>
                         <td>
-                          <a
-                            target="_blank"
-                            href="https://hackmd.io/@BrownDeepLearningS23/hw5c"
-                            >Image Captioning: Conceptual</a
-                          >
+                          LMs: Programming
                         </td>
-                        <td>Monday 4/3</td>
-                        <td>Monday 4/10</td>
+                        <td>Wednesday 3/11</td>
+                        <td>Friday 3/22</td>
                       </tr>
                       <tr>
-                        <td><b>[HW5]</b></td>
+                        <td><b>5C</b></td>
                         <td>
-                          <a
-                            target="_blank"
-                            href="https://hackmd.io/@BrownDeepLearningS23/hw5p"
-                            >Image Captioning: Programming</a
-                          >
+                          Image Captioning: Conceptual
                         </td>
-                        <td>Monday 4/3</td>
-                        <td>Friday 4/14</td>
+                        <td>Monday 4/1</td>
+                        <td>Monday 4/8</td>
                       </tr>
                       <tr>
-                        <td><b>[HW6]</b></td>
+                        <td><b>5P</b></td>
                         <td>
-                          <a
-                            target="_blank"
-                            href="https://hackmd.io/@BrownDeepLearningS23/hw6c"
-                            >Variational Autoencoders: Conceptual</a
-                          >
+                          Image Captioning: Programming
                         </td>
-                        <td>Friday 4/14</td>
-                        <td>Friday 4/21</td>
+                        <td>Monday 4/1</td>
+                        <td>Friday 4/12</td>
                       </tr>
                       <tr>
-                        <td><b>[HW6]</b></td>
+                        <td><b>6C</b></td>
                         <td>
-                          <a
-                            target="_blank"
-                            href="https://hackmd.io/@BrownDeepLearningS23/hw6p"
-                            >Variational Autoencoders: Programming</a
-                          >
+                          Variational Autoencoders: Conceptual
                         </td>
-                        <td>Friday 4/14</td>
-                        <td>Friday 4/28</td>
+                        <td>Friday 4/12</td>
+                        <td>Friday 4/19</td>
+                      </tr>
+                      <tr>
+                        <td><b>6P</b></td>
+                        <td>
+                          Variational Autoencoders: Programming
+                        </td>
+                        <td>Friday 4/12</td>
+                        <td>Friday 4/26</td>
                       </tr>
                     </tbody>
                   </table>
-                  <div class="flex flex-col gap-4">
+                  <div class="flex flex-col gap-4 hidden">
                     <div class="flex flex-col gap-4">
                       <h3 class="text-2xl font-semibold">Final Project</h3>
                       <em
@@ -1164,14 +906,6 @@
               <h2 class="text-3xl md:text-4xl font-semibold">Labs</h2>
               <div class="flex flex-col gap-4">
                 <div class="flex flex-col gap-2">
-                  <!-- <b class="font-semibold"
-                    >Choose your lab section using
-                    <a
-                      target="_blank"
-                      href="https://forms.gle/jRkNhvhuFDa89iPQA"
-                      >this Google Form</a
-                    ></b
-                  > -->
                   <i
                     >See the Resources section for information on opening labs
                     and using Google Colaboratory.</i
@@ -1190,124 +924,89 @@
                     </thead>
                     <tbody>
                       <tr>
-                        <td><b>[Lab0]</b></td>
+                        <td><b>0</b></td>
                         <td>
                           <a
                             target="_blank"
                             href="https://colab.research.google.com/drive/1A4W5VBAgetVvgqvVCGVfZWgTthvLfRkP"
                             >Introduction to NumPy</a
-                          >
+                          > <i class="italic"> - No Checkoff</i>
                         </td>
-                        <td>Wednesday 1/25</td>
-                        <td>Tuesday 1/31</td>
+                        <td>Wednesday 1/24</td>
+                        <td>Monday 1/29</td>
                       </tr>
                       <tr>
-                        <td><b>[Lab1]</b></td>
+                        <td><b>1</b></td>
                         <td>
-                          <a
-                            target="_blank"
-                            href="https://drive.google.com/drive/folders/13d9CojddVKYbdGtNKyRDvpWoMat_EK5u?usp=share_link"
-                            >Introduction to Machine Learning</a
-                          >
+                          Introduction to Machine Learning
                         </td>
-                        <td>Monday 1/30</td>
-                        <td>Sunday 2/05</td>
+                        <td>Monday 1/29</td>
+                        <td>Sunday 2/04</td>
                       </tr>
                       <tr>
-                        <td><b>[Lab2]</b></td>
+                        <td><b>2</b></td>
                         <td>
-                          <a
-                            target="_blank"
-                            href="https://drive.google.com/drive/folders/1AuOlRcBAzbRP5Ne06DQzVInla-Wh3Fr0?usp=sharing"
-                            >Optimizers</a
-                          >
+                          Optimizers
                         </td>
-                        <td>Monday 2/06</td>
-                        <td>Sunday 2/12</td>
+                        <td>Monday 2/05</td>
+                        <td>Sunday 2/11</td>
                       </tr>
                       <tr>
-                        <td><b>[Lab3]</b></td>
+                        <td><b>3</b></td>
                         <td>
-                          <a
-                            target="_blank"
-                            href="https://drive.google.com/drive/folders/1Bx61U5AMOHvHjvYRKn9rQHP1Ovl1G0lB?usp=sharing"
-                            >Tensorflow</a
-                          >
+                          Tensorflow
                         </td>
-                        <td>Monday 2/13</td>
-                        <td>Sunday 2/19</td>
+                        <td>Monday 2/12</td>
+                        <td>Sunday 2/18</td>
                       </tr>
                       <tr>
-                        <td><b>[Lab4]</b></td>
+                        <td><b>4</b></td>
                         <td>
-                          <a
-                            target="_blank"
-                            href="https://drive.google.com/file/d/15MNigAVcbLjO5J9kNWWDbL-ijCjyXF-i/view?usp=share_link"
-                            >CNNs</a
-                          >
+                          CNNs
                         </td>
-                        <td>Monday 2/27</td>
-                        <td>Sunday 3/5</td>
+                        <td>Monday 2/26</td>
+                        <td>Sunday 3/4</td>
                       </tr>
                       <tr>
-                        <td><b>[Lab5]</b></td>
+                        <td><b>5</b></td>
                         <td>
-                          <a
-                            target="_blank"
-                            href="https://drive.google.com/drive/folders/16GO35TZPPfcHAtgPoJGn5OHz39exejUe?usp=sharing"
-                            >Debiasing</a
-                          >
+                          Debiasing
                         </td>
-                        <td>Monday 3/13</td>
-                        <td>Sunday 3/19</td>
+                        <td>Monday 3/11</td>
+                        <td>Sunday 3/17</td>
                       </tr>
                       <tr>
-                        <td><b>[Lab6]</b></td>
+                        <td><b>6</b></td>
                         <td>
-                          <a
-                            target="_blank"
-                            href="https://drive.google.com/drive/folders/19IvlIEjCCQKQiYgerBlh0TOAycKTJ_tv?usp=share_link"
-                            >LIME</a
-                          >
+                          LIME
                         </td>
-                        <td>Monday 4/3</td>
-                        <td>Sunday 4/9</td>
+                        <td>Monday 4/1</td>
+                        <td>Sunday 4/7</td>
                       </tr>
                       <tr>
-                        <td><b>[Lab7]</b></td>
+                        <td><b>7</b></td>
                         <td>
-                          <a
-                            target="_blank"
-                            href="https://drive.google.com/drive/folders/15NoznM534AT08GQ89WHJZANfuCl-CTao?usp=sharing"
-                            >Autoencoders</a
+                          Autoencoders</a
                           >
                         </td>
-                        <td>Monday 4/10</td>
-                        <td>Sunday 4/16</td>
+                        <td>Monday 4/8</td>
+                        <td>Sunday 4/14</td>
                       </tr>
                       <tr>
-                        <td><b>[Lab8]</b></td>
+                        <td><b>8</b></td>
                         <td>
-                          <a
-                            target="_blank"
-                            href="https://drive.google.com/drive/folders/1ow8Gnhq_OvDw0JkpojA9MNMnL5zd9gYr?usp=share_link"
-                            >GANs</a
-                          >
+                          GANs
                         </td>
-                        <td>Monday 4/17</td>
-                        <td>Sunday 4/23</td>
+                        <td>Monday 4/15</td>
+                        <td>Sunday 4/21</td>
                       </tr>
                       <tr>
-                        <td><b>[Lab9]</b></td>
+                        <td><b>9</b></td>
                         <td>
-                          <a
-                            target="_blank"
-                            href="https://drive.google.com/drive/folders/19DRdJ31R3m6XBrUyPAx5UwXbOAOPSWnm?usp=share_link"
-                            >Reinforcement Learning</a
-                          >
+                          Reinforcement Learning
                         </td>
-                        <td>Monday 4/24</td>
-                        <td>Sunday 4/30</td>
+                        <td>Monday 4/22</td>
+                        <td>Sunday 4/28</td>
                       </tr>
                     </tbody>
                   </table>
@@ -1514,116 +1213,144 @@
                     >cs1470tas@lists.brown.edu</a
                   >
                 </div>
+                <div class="italic">
+                  Do not email sensitive information, including Health Services & Dean's Notes, to any HTAs, UTAs, or STAs.
+                </div>
               </div>
-              <div class="flex flex-col gap-2">
-                <h3 class="text-2xl font-medium">Professor</h3>
-                <div
-                  class="grid grid-cols-1 xs:grid-cols-2 md:grid-cols-3 gap-4 w-full"
-                >
-                  <div class="flex flex-col frosted">
-                    <img
-                      class="w-full aspect-square object-contain"
-                      src="images/profiles/ritambhara.jpg"
-                      alt="Ritambhara Singh"
-                    />
-                    <div class="p-4">
-                      <div class="text-md font-medium">Ritambhara Singh</div>
-                      <div class="text-sm text-slate-400">
-                        she/her • rsingh47
+              <div
+              class="grid grid-cols-1 xs:grid-cols-2 md:grid-cols-3 gap-4 w-full"
+              >
+                <div class="flex flex-col gap-2">
+                  <h3 class="text-2xl font-medium">Professor</h3>
+                    <div class="flex flex-col frosted rounded-lg">
+                      <img
+                        class="w-full aspect-square object-contain rounded-t-lg"
+                        src="images/profiles/ritambhara.jpg"
+                        alt="Ritambhara Singh"
+                      />
+                      <div class="p-4">
+                        <div class="text-md font-medium">Ritambhara Singh</div>
+                        <div class="text-sm text-slate-400">
+                          she/her
+                        </div>
+                        <div class="text-sm text-slate-600 mt-2 italic">
+                          Paracanthurus hepatus
+                        </div>
                       </div>
-                      <div class="text-sm text-slate-600 mt-2">
-                        Dory, from Finding Nemo, is my favorite animated movie
-                        character ("Just keep swimming").
+                    </div>
+                </div>
+                <div class="flex flex-col gap-2">
+                  <h3 class="text-2xl font-medium">Graduate TA</h3>
+
+                    <div class="flex flex-col frosted rounded-lg">
+                      <img
+                        class="w-full aspect-square object-contain rounded-t-lg"
+                        src="images/profiles/michal.jpg"
+                        alt="Michal Golovanevsky"
+                      />
+                      <div class="p-4">
+                        <div class="text-md font-medium">Michal Golovanevsky</div>
+                        <div class="text-sm text-slate-400">she/her</div>
+                        <div class="text-sm text-slate-600 mt-2">Octopus</div>
                       </div>
                     </div>
                   </div>
                 </div>
-              </div>
               <div class="flex flex-col gap-2">
                 <h3 class="text-2xl font-medium">HTAs</h3>
                 <div
                   class="grid grid-cols-1 xs:grid-cols-2 md:grid-cols-3 gap-4 w-full"
                 >
-                  <div class="flex flex-col frosted">
+                  <div class="flex flex-col frosted rounded-lg">
                     <img
-                      class="w-full aspect-square object-contain"
-                      src="images/profiles/dylan.jpg"
-                      alt="Dylan Hu"
-                      title="turns as red as these tomatoes"
-                    />
-                    <div class="p-4">
-                      <div class="text-md font-medium">Dylan Hu</div>
-                      <div class="text-sm text-slate-400">he/him • dhu24</div>
-                      <div class="text-sm text-slate-600 mt-2">
-                        Runs
-                        <code class="bg-slate-200 px-1 rounded-sm"
-                          >brew upgrade</code
-                        >
-                        just to feel something
-                      </div>
-                    </div>
-                  </div>
-                  <div class="flex flex-col frosted">
-                    <img
-                      class="w-full aspect-square object-cover"
-                      src="images/profiles/nitya.jpg"
-                      alt="Nitya Thakkar"
-                    />
-                    <div class="p-4">
-                      <div class="text-md font-medium">Nitya Thakkar</div>
-                      <div class="text-sm text-slate-400">
-                        she/her • nthakka3
-                      </div>
-                      <div class="text-sm text-slate-600 mt-2">
-                        I am notoriously terrible at remembering names so you'll
-                        have to be really memorable for me to remember yours :)
-                      </div>
-                    </div>
-                  </div>
-                  <div class="flex flex-col frosted">
-                    <img
-                      class="w-full aspect-square object-cover"
-                      src="images/profiles/raymond_dai.jpg"
+                      class="w-full aspect-square object-cover rounded-t-lg"
+                      src="images/profiles/ray_dai.jpg"
                       alt="Raymond Dai"
                     />
                     <div class="p-4">
                       <div class="text-md font-medium">Raymond Dai</div>
-                      <div class="text-sm text-slate-400">he/him • rdai4</div>
+                      <div class="text-sm text-slate-400">he/him</div>
                       <div class="text-sm text-slate-600 mt-2">
-                        Will be replaced by ChatGPT in late March.
+                        Manta Ray
                       </div>
                     </div>
                   </div>
-                  <div class="flex flex-col frosted">
+                  <div class="flex flex-col frosted rounded-lg">
                     <img
-                      class="w-full aspect-square object-cover"
-                      src="images/profiles/vadim.jpg"
-                      alt="Vadim Kudlay"
+                      class="w-full aspect-square object-contain rounded-t-lg"
+                      src="images/profiles/erica.jpg"
+                      alt="Erica Song"
+                      title="turns as red as these tomatoes"
                     />
                     <div class="p-4">
-                      <div class="text-md font-medium">Vadim Kudlay</div>
-                      <div class="text-sm text-slate-400">he/him • vkudlay</div>
-                      <div class="text-sm text-slate-600 mt-2">:D</div>
+                      <div class="text-md font-medium">Erica Song</div>
+                      <div class="text-sm text-slate-400">she/her</div>
+                      <div class="text-sm text-slate-600 mt-2">
+                        Sea Otter
+                      </div>
                     </div>
                   </div>
-                  <div class="flex flex-col frosted">
+                  <div class="flex flex-col frosted rounded-lg">
                     <img
-                      class="w-full aspect-square object-cover"
-                      src="images/profiles/robert.jpg"
-                      alt="Robert Scheidegger"
+                      class="w-full aspect-square object-cover rounded-t-lg"
+                      src="images/profiles/joe.jpg"
+                      alt="Joe Dodson"
                     />
                     <div class="p-4">
-                      <div class="text-md font-medium">Robert Scheidegger</div>
+                      <div class="text-md font-medium">Joe Dodson</div>
                       <div class="text-sm text-slate-400">
-                        he/him • rscheide
+                        he/him
                       </div>
                       <div class="text-sm text-slate-600 mt-2">
-                        When I was in elementary school, I was fascinated by sea
-                        animals and would spend many of my mornings reading
-                        about them.
+                        Orca
                       </div>
                     </div>
                   </div>
+                  <div class="flex flex-col frosted rounded-lg">
+                    <img
+                      class="w-full aspect-square object-cover rounded-t-lg"
+                      src="images/profiles/karan.jpg"
+                      alt="Karan Kashyap"
+                    />
+                    <div class="p-4">
+                      <div class="text-md font-medium">Karan Kashyap</div>
+                      <div class="text-sm text-slate-400">he/him</div>
+                      <div class="text-sm text-slate-600 mt-2">Octopus</div>
+                    </div>
+                  </div>
+                  <div class="flex flex-col frosted rounded-lg">
+                    <img
+                      class="w-full aspect-square object-cover rounded-t-lg"
+                      src="images/profiles/pranav.jpg"
+                      alt="Pranav Mahableshwarkar"
+                    />
+                    <div class="p-4">
+                      <div class="text-md font-medium">Pranav Mahableshwarkar</div>
+                      <div class="text-sm text-slate-400">
+                        he/him
+                      </div>
+                      <div class="text-sm text-slate-600 mt-2">
+                        Blobfish
+                      </div>
+                    </div>
+                  </div>
+                  <div class="flex flex-col frosted rounded-lg">
+                    <img
+                      class="w-full aspect-square object-cover rounded-t-lg"
+                      src="images/profiles/earth.jpg"
+                      alt="Earth Mokkamakkul"
+                    />
+                    <div class="p-4">
+                      <div class="text-md font-medium">Earth Mokkamakkul</div>
+                      <div class="text-sm text-slate-400">
+                        he/him
+                      </div>
+                      <div class="text-sm text-slate-600 mt-2">
+                        Manatee
+                      </div>
+                    </div>
+                  </div>
+                  
                 </div>
               </div>
               <div class="flex flex-col gap-2">
@@ -1631,356 +1358,557 @@
                 <div
                   class="grid grid-cols-1 xs:grid-cols-2 md:grid-cols-3 gap-4 w-full"
                 >
-                  <div class="flex flex-col frosted">
+                  <div class="flex flex-col frosted rounded-lg">
                     <img
-                      class="w-full aspect-square object-contain"
-                      src="images/profiles/bumjin.jpg"
+                      class="w-full aspect-square object-contain rounded-t-lg"
+                      src="images/profiles/julian.jpg"
+                      alt="Julian Dai"
+                    />
+                    <div class="p-4">
+                      <div class="text-md font-medium">Julian Dai</div>
+                      <div class="text-sm text-slate-400">he/him</div>
+                      <div class="text-sm text-slate-600 mt-2">
+                        Crab
+                      </div>
+                    </div>
+                  </div>
+                  <div class="flex flex-col frosted rounded-lg">
+                    <img
+                      class="w-full aspect-square object-cover rounded-t-lg"
+                      src="images/profiles/calvin.jpg"
+                      alt="Calvin Eng"
+                    />
+                    <div class="p-4">
+                      <div class="text-md font-medium">Calvin Eng</div>
+                      <div class="text-sm text-slate-400">
+                        he/him
+                      </div>
+                      <div class="text-sm text-slate-600 mt-2">
+                        Whale
+                      </div>
+                    </div>
+                  </div>
+                  <div class="flex flex-col frosted rounded-lg">
+                    <img
+                      class="w-full aspect-square object-cover rounded-t-lg"
+                      src="images/profiles/taj.jpg"
+                      alt="Taj Gillin"
+                    />
+                    <div class="p-4">
+                      <div class="text-md font-medium">
+                        Taj Gillin
+                      </div>
+                      <div class="text-sm text-slate-400">
+                        he/him
+                      </div>
+                      <div class="text-sm text-slate-600 mt-2">
+                        Starfish
+                      </div>
+                    </div>
+                  </div>
+                  <div class="flex flex-col frosted rounded-lg">
+                    <img
+                      class="w-full aspect-square object-cover rounded-t-lg"
+                      src="images/profiles/spandan.jpg"
+                      alt="Spandan Goel"
+                    />
+                    <div class="p-4">
+                      <div class="text-md font-medium">Spandan Goel</div>
+                      <div class="text-sm text-slate-400">he/him</div>
+                      <div class="text-sm text-slate-600 mt-2">
+                        Dolphin
+                      </div>
+                    </div>
+                  </div>
+                  <div class="flex flex-col frosted rounded-lg">
+                    <img
+                      class="w-full aspect-square object-cover rounded-t-lg"
+                      src="images/profiles/naicheng.jpg"
+                      alt="Naicheng (Arnie) He"
+                    />
+                    <div class="p-4">
+                      <div class="text-md font-medium">Naicheng (Arnie) He</div>
+                      <div class="text-sm text-slate-400">he/him</div>
+                      <div class="text-sm text-slate-600 mt-2">
+                        Sea Turtle
+                      </div>
+                    </div>
+                  </div>
+                  <div class="flex flex-col frosted rounded-lg">
+                    <img
+                      class="w-full aspect-square object-cover rounded-t-lg"
+                      src="images/profiles/amanda.jpg"
+                      alt="Amanda Hernandez Sandate"
+                    />
+                    <div class="p-4">
+                      <div class="text-md font-medium">Amanda Hernandez Sandate</div>
+                      <div class="text-sm text-slate-400">
+                        she/her
+                      </div>
+                      <div class="text-sm text-slate-600 mt-2">
+                        Walrus
+                      </div>
+                    </div>
+                  </div>
+                  <div class="flex flex-col frosted rounded-lg">
+                    <img
+                      class="w-full aspect-square object-cover rounded-t-lg"
+                      src="images/profiles/woody.jpg"
+                      alt="Woody Hulse"
+                    />
+                    <div class="p-4">
+                      <div class="text-md font-medium">Woody Hulse</div>
+                      <div class="text-sm text-slate-400">
+                        he/him
+                      </div>
+                      <div class="text-sm text-slate-600 mt-2">
+                        Anglerfish
+                      </div>
+                    </div>
+                  </div>
+                  <div class="flex flex-col frosted rounded-lg">
+                    <img
+                      class="w-full aspect-square object-cover rounded-t-lg"
+                      src="images/profiles/kelvin.jpg"
+                      alt="Kelvin Jiang"
+                    />
+                    <div class="p-4">
+                      <div class="text-md font-medium">Kelvin Jiang</div>
+                      <div class="text-sm text-slate-400">
+                        he/him
+                      </div>
+                      <div class="text-sm text-slate-600 mt-2">
+                        Penguin
+                      </div>
+                    </div>
+                  </div>
+                  <div class="flex flex-col frosted rounded-lg">
+                    <img
+                      class="w-full aspect-square object-cover rounded-t-lg"
+                      src="images/profiles/default.jpg"
                       alt="Bumjin Joo"
                     />
                     <div class="p-4">
                       <div class="text-md font-medium">Bumjin Joo</div>
-                      <div class="text-sm text-slate-400">he/him • bjoo2</div>
-                      <div class="text-sm text-slate-600 mt-2">
-                        Custom keebs are pretty cool.
-                      </div>
-                    </div>
-                  </div>
-                  <div class="flex flex-col frosted">
-                    <img
-                      class="w-full aspect-square object-cover"
-                      src="images/profiles/dave.jpg"
-                      alt="Dave Lubawski"
-                    />
-                    <div class="p-4">
-                      <div class="text-md font-medium">Dave Lubawski</div>
-                      <div class="text-sm text-slate-400">
-                        he/him • dlubawsk
-                      </div>
-                      <div class="text-sm text-slate-600 mt-2">
-                        Hi I’m Dave and my fun fact is I once fought 4 chickens
-                        and lost
-                      </div>
-                    </div>
-                  </div>
-                  <div class="flex flex-col frosted">
-                    <img
-                      class="w-full aspect-square object-cover"
-                      src="images/profiles/earth.jpg"
-                      alt="Jitpuwapat (Earth) Mokkamakkul"
-                    />
-                    <div class="p-4">
-                      <div class="text-md font-medium">
-                        Jitpuwapat (Earth) Mokkamakkul
-                      </div>
-                      <div class="text-sm text-slate-400">
-                        he/him • jmokkama
-                      </div>
-                      <div class="text-sm text-slate-600 mt-2">
-                        My first name, Jitpuwapat, was given to me by the late
-                        king of Thailand
-                      </div>
-                    </div>
-                  </div>
-                  <div class="flex flex-col frosted">
-                    <img
-                      class="w-full aspect-square object-cover"
-                      src="images/profiles/eric.jpg"
-                      alt="Eric Han"
-                    />
-                    <div class="p-4">
-                      <div class="text-md font-medium">Eric Han</div>
-                      <div class="text-sm text-slate-400">he/him • ehan31</div>
-                      <div class="text-sm text-slate-600 mt-2">
-                        My last name means Korean! (I'm Chinese though, I swear)
-                      </div>
-                    </div>
-                  </div>
-                  <div class="flex flex-col frosted">
-                    <img
-                      class="w-full aspect-square object-cover"
-                      src="images/profiles/evan.jpg"
-                      alt="Evan Lu"
-                    />
-                    <div class="p-4">
-                      <div class="text-md font-medium">Evan Lu</div>
-                      <div class="text-sm text-slate-400">he/him • elu14</div>
-                      <div class="text-sm text-slate-600 mt-2">
-                        sassy lost child
-                      </div>
-                    </div>
-                  </div>
-                  <div class="flex flex-col frosted">
-                    <img
-                      class="w-full aspect-square object-cover"
-                      src="images/profiles/henry.jpg"
-                      alt="Henry Sowerby"
-                    />
-                    <div class="p-4">
-                      <div class="text-md font-medium">Henry Sowerby</div>
-                      <div class="text-sm text-slate-400">
-                        he/him • hsowerby
-                      </div>
-                      <div class="text-sm text-slate-600 mt-2">
-                        I spent the weekend with a bunch of highly agentic
-                        people and now i've got a bunch of thoughts about
-                        agency.
-                      </div>
-                    </div>
-                  </div>
-                  <div class="flex flex-col frosted">
-                    <img
-                      class="w-full aspect-square object-cover"
-                      src="images/profiles/iris.jpg"
-                      alt="Iris Cheng"
-                    />
-                    <div class="p-4">
-                      <div class="text-md font-medium">Iris Cheng</div>
-                      <div class="text-sm text-slate-400">
-                        she/her • icheng3
-                      </div>
-                      <div class="text-sm text-slate-600 mt-2">
-                        I make really good dumplings.
-                      </div>
-                    </div>
-                  </div>
-                  <div class="flex flex-col frosted">
-                    <img
-                      class="w-full aspect-square object-cover"
-                      src="images/profiles/joe.jpg"
-                      alt="Joe Dodson"
-                    />
-                    <div class="p-4">
-                      <div class="text-md font-medium">Joe Dodson</div>
-                      <div class="text-sm text-slate-400">
-                        he/him • jdodson4
-                      </div>
+                      <div class="text-sm text-slate-400">he/him</div>
                       <div class="text-sm text-slate-600 mt-2"></div>
                     </div>
                   </div>
-                  <div class="flex flex-col frosted">
+                  <div class="flex flex-col frosted rounded-lg">
                     <img
-                      class="w-full aspect-square object-cover"
-                      src="images/profiles/default.jpg"
-                      alt="Jun Suk Ha"
+                      class="w-full aspect-square object-cover rounded-t-lg"
+                      src="images/profiles/preetish.jpg"
+                      alt="Preetish Juneja"
                     />
                     <div class="p-4">
-                      <div class="text-md font-medium">Jun Suk Ha</div>
-                      <div class="text-sm text-slate-400">he/him • jha38</div>
-                      <div class="text-sm text-slate-600 mt-2"></div>
-                    </div>
-                  </div>
-                  <div class="flex flex-col frosted">
-                    <img
-                      class="w-full aspect-square object-cover"
-                      src="images/profiles/karan.jpg"
-                      alt="Karan Kashyap"
-                    />
-                    <div class="p-4">
-                      <div class="text-md font-medium">Karan Kashyap</div>
+                      <div class="text-md font-medium">Preetish Juneja</div>
                       <div class="text-sm text-slate-400">
-                        he/him • kkashyap
+                        he/him
                       </div>
                       <div class="text-sm text-slate-600 mt-2">
-                        I caught a shark the first time I went fishing
+                        Dolphin
                       </div>
                     </div>
                   </div>
-                  <div class="flex flex-col frosted">
+                  <div class="flex flex-col frosted rounded-lg">
                     <img
-                      class="w-full aspect-square object-cover"
-                      src="images/profiles/logan.jpg"
-                      alt="Logan Bauman"
+                      class="w-full aspect-square object-cover rounded-t-lg"
+                      src="images/profiles/mohammed.jpg"
+                      alt="Mohammed Khan"
                     />
                     <div class="p-4">
-                      <div class="text-md font-medium">Logan Bauman</div>
-                      <div class="text-sm text-slate-400">he/him • lbauman</div>
+                      <div class="text-md font-medium">Mohammed Khan</div>
+                      <div class="text-sm text-slate-400">he/him</div>
                       <div class="text-sm text-slate-600 mt-2">
-                        I love food and sports so come talk to me about either!
-                        You can also just give me food.
+                        Octopus
                       </div>
                     </div>
                   </div>
-                  <div class="flex flex-col frosted">
+                  <div class="flex flex-col frosted rounded-lg">
                     <img
-                      class="w-full aspect-square object-cover"
+                      class="w-full aspect-square object-cover rounded-t-lg"
+                      src="images/profiles/philip.jpg"
+                      alt="Philip LaDuca"
+                    />
+                    <div class="p-4">
+                      <div class="text-md font-medium">Philip LaDuca</div>
+                      <div class="text-sm text-slate-400">he/him</div>
+                      <div class="text-sm text-slate-600 mt-2" title="true af">
+                        Oyster
+                      </div>
+                    </div>
+                  </div>
+                  <div class="flex flex-col frosted rounded-lg">
+                    <img
+                      class="w-full aspect-square object-cover rounded-t-lg"
+                      src="images/profiles/kyle_lam.jpg"
+                      alt="Kyle Lam"
+                    />
+                    <div class="p-4">
+                      <div class="text-md font-medium">Kyle Lam</div>
+                      <div class="text-sm text-slate-400">he/him</div>
+                      <div class="text-sm text-slate-600 mt-2" title="same">
+                        Jellyfish
+                      </div>
+                    </div>
+                  </div>
+                  <div class="flex flex-col frosted rounded-lg">
+                    <img
+                      class="w-full aspect-square object-cover rounded-t-lg"
+                      src="images/profiles/jennifer.jpg"
+                      alt="Jennifer Li"
+                    />
+                    <div class="p-4">
+                      <div class="text-md font-medium">Jennifer Li</div>
+                      <div class="text-sm text-slate-400">
+                        she/her
+                      </div>
+                      <div class="text-sm text-slate-600 mt-2">
+                        Blue Whale
+                      </div>
+                    </div>
+                  </div>
+                  <div class="flex flex-col frosted rounded-lg">
+                    <img
+                      class="w-full aspect-square object-cover rounded-t-lg"
+                      src="images/profiles/alyssa.jpg"
+                      alt="Alyssa Loo"
+                    />
+                    <div class="p-4">
+                      <div class="text-md font-medium">Alyssa Loo</div>
+                      <div class="text-sm text-slate-400">
+                        she/her
+                      </div>
+                      <div class="text-sm text-slate-600 mt-2">
+                        Narwhal
+                      </div>
+                    </div>
+                  </div>
+                  <div class="flex flex-col frosted rounded-lg">
+                    <img
+                      class="w-full aspect-square object-cover rounded-t-lg"
                       src="images/profiles/michael.jpg"
                       alt="Michael Lu"
                     />
                     <div class="p-4">
                       <div class="text-md font-medium">Michael Lu</div>
-                      <div class="text-sm text-slate-400">he/him • mlu54</div>
-                      <div class="text-sm text-slate-600 mt-2" title="true af">
-                        That first bite of Chinatown always hit different.
-                      </div>
-                    </div>
-                  </div>
-                  <div class="flex flex-col frosted">
-                    <img
-                      class="w-full aspect-square object-cover"
-                      src="images/profiles/nange.jpg"
-                      alt="Nange Li"
-                    />
-                    <div class="p-4">
-                      <div class="text-md font-medium">Nange Li</div>
-                      <div class="text-sm text-slate-400">she/her • nli32</div>
-                      <div class="text-sm text-slate-600 mt-2" title="same">
-                        I only order bubble tea with 0% sugar.
-                      </div>
-                    </div>
-                  </div>
-                  <div class="flex flex-col frosted">
-                    <img
-                      class="w-full aspect-square object-cover"
-                      src="images/profiles/preeti.jpg"
-                      alt="Preeti Nagalamadaka"
-                    />
-                    <div class="p-4">
-                      <div class="text-md font-medium">Preeti Nagalamadaka</div>
                       <div class="text-sm text-slate-400">
-                        she/her • pnagala1
+                        he/him
                       </div>
                       <div class="text-sm text-slate-600 mt-2">
-                        Did you know sea otters hold hands when they sleep so
-                        they don't drift away from each other?
+                        Sea Otter
                       </div>
                     </div>
                   </div>
-                  <div class="flex flex-col frosted">
+                  <div class="flex flex-col frosted rounded-lg">
                     <img
-                      class="w-full aspect-square object-cover"
-                      src="images/profiles/ray_del_vecchio.jpg"
-                      alt="Ray Del Vecchio"
-                    />
-                    <div class="p-4">
-                      <div class="text-md font-medium">Ray Del Vecchio</div>
-                      <div class="text-sm text-slate-400">
-                        he/him • rdelvecc
-                      </div>
-                      <div class="text-sm text-slate-600 mt-2">
-                        I have a math tattoo somewhere on me!
-                      </div>
-                    </div>
-                  </div>
-                  <div class="flex flex-col frosted">
-                    <img
-                      class="w-full aspect-square object-cover"
-                      src="images/profiles/ray_wang.jpg"
-                      alt="Ray Wang"
-                    />
-                    <div class="p-4">
-                      <div class="text-md font-medium">Ray Wang</div>
-                      <div class="text-sm text-slate-400">
-                        he/him • xwang356
-                      </div>
-                      <div class="text-sm text-slate-600 mt-2">
-                        I accidentally became a dance major in undergrad
-                      </div>
-                    </div>
-                  </div>
-                  <div class="flex flex-col frosted">
-                    <img
-                      class="w-full aspect-square object-cover"
-                      src="images/profiles/shirley.jpg"
-                      alt="Shirley Loayza Sanchez"
+                      class="w-full aspect-square object-cover rounded-t-lg"
+                      src="images/profiles/ben.jpg"
+                      alt="Ben Maizes"
                     />
                     <div class="p-4">
                       <div class="text-md font-medium">
-                        Shirley Loayza Sanchez
+                        Ben Maizes
                       </div>
                       <div class="text-sm text-slate-400">
-                        she/her • sloayzas
+                        he/him
                       </div>
                       <div class="text-sm text-slate-600 mt-2">
-                        I have taken pictures of +100 rose varieties!
+                        Narwhal
                       </div>
                     </div>
                   </div>
-                  <div class="flex flex-col frosted">
+                  <div class="flex flex-col frosted rounded-lg">
                     <img
-                      class="w-full aspect-square object-cover"
-                      src="images/profiles/taishi.jpg"
-                      alt="Taishi Nishizawa"
+                      class="w-full aspect-square object-cover rounded-t-lg"
+                      src="images/profiles/default.jpg"
+                      alt="Ken Ngamprasertsith"
                     />
                     <div class="p-4">
-                      <div class="text-md font-medium">Taishi Nishizawa</div>
+                      <div class="text-md font-medium">Ken Ngamprasertsith</div>
                       <div class="text-sm text-slate-400">
-                        he/him • tnishiza
+                        he/him
                       </div>
                       <div class="text-sm text-slate-600 mt-2">
                         i like cheese
                       </div>
                     </div>
                   </div>
-                  <div class="flex flex-col frosted">
+                  <div class="flex flex-col frosted rounded-lg">
                     <img
-                      class="w-full aspect-square object-cover"
-                      src="images/profiles/will.jpg"
-                      alt="Will Guo"
+                      class="w-full aspect-square object-cover rounded-t-lg"
+                      src="images/profiles/default.jpg"
+                      alt="Sophia Qiming"
                     />
                     <div class="p-4">
-                      <div class="text-md font-medium">Will Guo</div>
-                      <div class="text-sm text-slate-400">he/him • wguo25</div>
+                      <div class="text-md font-medium">Sophia Qiming</div>
+                      <div class="text-sm text-slate-400">
+                        she/her
+                      </div>
+                      <div class="text-sm text-slate-600 mt-2">
+                        i like cheese
+                      </div>
+                    </div>
+                  </div>
+                  <div class="flex flex-col frosted rounded-lg">
+                    <img
+                      class="w-full aspect-square object-cover rounded-t-lg"
+                      src="images/profiles/aayush.jpg"
+                      alt="Aayush Setty"
+                    />
+                    <div class="p-4">
+                      <div class="text-md font-medium">Aayush Setty</div>
+                      <div class="text-sm text-slate-400">
+                        he/him
+                      </div>
+                      <div class="text-sm text-slate-600 mt-2">
+                        Whale Shark
+                      </div>
+                    </div>
+                  </div>
+                  <div class="flex flex-col frosted rounded-lg">
+                    <img
+                      class="w-full aspect-square object-cover rounded-t-lg"
+                      src="images/profiles/jason.jpg"
+                      alt="Jason Silva"
+                    />
+                    <div class="p-4">
+                      <div class="text-md font-medium">Jason Silva</div>
+                      <div class="text-sm text-slate-400">
+                        he/him
+                      </div>
+                      <div class="text-sm text-slate-600 mt-2">
+                        Penguin
+                      </div>
+                    </div>
+                  </div>
+                  <div class="flex flex-col frosted rounded-lg">
+                    <img
+                      class="w-full aspect-square object-cover rounded-t-lg"
+                      src="images/profiles/aryan.jpg"
+                      alt="Aryan Singh"
+                    />
+                    <div class="p-4">
+                      <div class="text-md font-medium">Aryan Singh</div>
+                      <div class="text-sm text-slate-400">
+                        he/him
+                      </div>
+                      <div class="text-sm text-slate-600 mt-2">
+                        Blue Whale
+                      </div>
+                    </div>
+                  </div>
+                  <div class="flex flex-col frosted rounded-lg">
+                    <img
+                      class="w-full aspect-square object-cover rounded-t-lg"
+                      src="images/profiles/sameer.jpg"
+                      alt="Sameer Sinha"
+                    />
+                    <div class="p-4">
+                      <div class="text-md font-medium">Sameer Sinha</div>
+                      <div class="text-sm text-slate-400">
+                        he/him
+                      </div>
+                      <div class="text-sm text-slate-600 mt-2">
+                        Otter
+                      </div>
+                    </div>
+                  </div>
+                  <div class="flex flex-col frosted rounded-lg">
+                    <img
+                      class="w-full aspect-square object-cover rounded-t-lg"
+                      src="images/profiles/quinn.jpg"
+                      alt="Quinn Straus"
+                    />
+                    <div class="p-4">
+                      <div class="text-md font-medium">Quinn Straus</div>
+                      <div class="text-sm text-slate-400">
+                        he/him
+                      </div>
+                      <div class="text-sm text-slate-600 mt-2">
+                        Octopus
+                      </div>
+                    </div>
+                  </div>
+                  <div class="flex flex-col frosted rounded-lg">
+                    <img
+                      class="w-full aspect-square object-cover rounded-t-lg"
+                      src="images/profiles/torsten.jpg"
+                      alt="Torsten Ullrich"
+                    />
+                    <div class="p-4">
+                      <div class="text-md font-medium">Torsten Ullrich</div>
+                      <div class="text-sm text-slate-400">
+                        he/him
+                      </div>
+                      <div class="text-sm text-slate-600 mt-2">
+                        Otter
+                      </div>
+                    </div>
+                  </div>
+                  <div class="flex flex-col frosted rounded-lg">
+                    <img
+                      class="w-full aspect-square object-cover rounded-t-lg"
+                      src="images/profiles/mikayla.jpg"
+                      alt="Mikayla Walsh"
+                    />
+                    <div class="p-4">
+                      <div class="text-md font-medium">Mikayla Walsh</div>
+                      <div class="text-sm text-slate-400">
+                        he/him
+                      </div>
+                      <div class="text-sm text-slate-600 mt-2">
+                        Squid
+                      </div>
+                    </div>
+                  </div>
+                  <div class="flex flex-col frosted rounded-lg">
+                    <img
+                      class="w-full aspect-square object-cover rounded-t-lg"
+                      src="images/profiles/emily.jpg"
+                      alt="Emily Wang"
+                    />
+                    <div class="p-4">
+                      <div class="text-md font-medium">Emily Wang</div>
+                      <div class="text-sm text-slate-400">
+                        she/her
+                      </div>
+                      <div class="text-sm text-slate-600 mt-2">
+                        Beluga Whale
+                      </div>
+                    </div>
+                  </div>
+                  <div class="flex flex-col frosted rounded-lg">
+                    <img
+                      class="w-full aspect-square object-cover rounded-t-lg"
+                      src="images/profiles/xilin.jpg"
+                      alt="Xilin (Rice) Wang"
+                    />
+                    <div class="p-4">
+                      <div class="text-md font-medium">Xilin (Rice) Wang</div>
+                      <div class="text-sm text-slate-400">
+                        he/him
+                      </div>
+                      <div class="text-sm text-slate-600 mt-2">
+                        Manta
+                      </div>
+                    </div>
+                  </div>
+                  <div class="flex flex-col frosted rounded-lg">
+                    <img
+                      class="w-full aspect-square object-cover rounded-t-lg"
+                      src="images/profiles/ray.jpg"
+                      alt="Ray Xu"
+                    />
+                    <div class="p-4">
+                      <div class="text-md font-medium">Ray Xu</div>
+                      <div class="text-sm text-slate-400">
+                        he/him
+                      </div>
+                      <div class="text-sm text-slate-600 mt-2">
+                        Dolphin
+                      </div>
+                    </div>
+                  </div>
+                  <div class="flex flex-col frosted rounded-lg">
+                    <img
+                      class="w-full aspect-square object-cover rounded-t-lg"
+                      src="images/profiles/enyan.jpg"
+                      alt="Enyan Zhang"
+                    />
+                    <div class="p-4">
+                      <div class="text-md font-medium">Enyan Zhang</div>
+                      <div class="text-sm text-slate-400">
+                        he/him
+                      </div>
+                      <div class="text-sm text-slate-600 mt-2">
+                        Flapjack Octopus
+                      </div>
+                    </div>
+                  </div>
+                  <div class="flex flex-col frosted rounded-lg">
+                    <img
+                      class="w-full aspect-square object-cover rounded-t-lg"
+                      src="images/profiles/alex_zheng.jpg"
+                      alt="Alex Zheng"
+                    />
+                    <div class="p-4">
+                      <div class="text-md font-medium">Alex Zheng</div>
+                      <div class="text-sm text-slate-400">
+                        he/him
+                      </div>
+                      <div class="text-sm text-slate-600 mt-2">
+                        Jellyfish
+                      </div>
+                    </div>
+                  </div>
+                  <div class="flex flex-col frosted rounded-lg">
+                    <img
+                      class="w-full aspect-square object-cover rounded-t-lg"
+                      src="images/profiles/alex_zhou.jpg"
+                      alt="Alex Zhou"
+                    />
+                    <div class="p-4">
+                      <div class="text-md font-medium">Alex Zhou</div>
+                      <div class="text-sm text-slate-400">
+                        he/him
+                      </div>
+                      <div class="text-sm text-slate-600 mt-2">
+                        Penguin
+                      </div>
+                    </div>
+                  </div>
+
+
+                </div>
+              </div>
+              <div class="flex flex-col gap-2">
+                <h3 class="text-2xl font-medium">STA & UTA-STAs</h3>
+                <div
+                  class="grid grid-cols-1 xs:grid-cols-2 md:grid-cols-3 gap-4 w-full"
+                >
+                <div class="flex flex-col frosted rounded-lg">
+                    <img
+                      class="w-full aspect-square object-cover rounded-t-lg"
+                      src="images/profiles/default.jpg"
+                      alt="Naphat Permpredanun"
+                    />
+                    <div class="p-4">
+                      <div class="text-md font-medium">Naphat Permpredanun</div>
+                      <div class="text-sm text-slate-400">he/him • STA</div>
                       <div class="text-sm text-slate-600 mt-2">
                         I like spinach. A lot.
                       </div>
                     </div>
                   </div>
-                </div>
-              </div>
-              <div class="flex flex-col gap-2">
-                <h3 class="text-2xl font-medium">STAs</h3>
-                <div
-                  class="grid grid-cols-1 xs:grid-cols-2 md:grid-cols-3 gap-4 w-full"
-                >
-                  <div class="flex flex-col frosted">
+                  <div class="flex flex-col frosted rounded-lg">
                     <img
-                      class="w-full aspect-square object-contain"
-                      src="images/profiles/brendan.jpg"
-                      alt="Brendan Ho"
+                      class="w-full aspect-square object-contain rounded-t-lg"
+                      src="images/profiles/kyle_yeh.jpg"
+                      alt="Kyle Yeh"
                     />
                     <div class="p-4">
-                      <div class="text-md font-medium">Brendan Ho</div>
-                      <div class="text-sm text-slate-400">he/him • bho15</div>
+                      <div class="text-md font-medium">Kyle Yeh</div>
+                      <div class="text-sm text-slate-400">he/him • UTA-STA</div>
                       <div class="text-sm text-slate-600 mt-2">
-                        I prefer leftovers cold right out of the fridge, excited
-                        to meet you all!
+                        Marlin
                       </div>
                     </div>
                   </div>
-                  <div class="flex flex-col frosted">
+                  <div class="flex flex-col frosted rounded-lg">
                     <img
-                      class="w-full aspect-square object-cover"
-                      src="images/profiles/faizaan.jpg"
-                      alt="Faizaan Vidhani"
+                      class="w-full aspect-square object-cover rounded-t-lg"
+                      src="images/profiles/lingze.jpg"
+                      alt="Lingze Zhang"
                     />
                     <div class="p-4">
-                      <div class="text-md font-medium">Faizaan Vidhani</div>
+                      <div class="text-md font-medium">Lingze Zhang</div>
                       <div class="text-sm text-slate-400">
-                        he/him • fvidhani
+                        he/him • UTA-STA
                       </div>
                       <div class="text-sm text-slate-600 mt-2">
-                        I like rooting for Dallas sports teams and spending time
-                        at the OMAC.
+                        Dolphin
                       </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="flex flex-col gap-2">
-                <h3 class="text-2xl font-medium">Grad TA</h3>
-                <div
-                  class="grid grid-cols-1 xs:grid-cols-2 md:grid-cols-3 gap-4 w-full"
-                >
-                  <div class="flex flex-col frosted">
-                    <img
-                      class="w-full aspect-square object-contain"
-                      src="images/profiles/default.jpg"
-                      alt="Xianghao Xu"
-                    />
-                    <div class="p-4">
-                      <div class="text-md font-medium">Xianghao Xu</div>
-                      <div class="text-sm text-slate-400">he/him • xxu43</div>
-                      <div class="text-sm text-slate-600 mt-2"></div>
                     </div>
                   </div>
                 </div>

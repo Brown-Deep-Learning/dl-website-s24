@@ -4,7 +4,7 @@ import { resolve } from "path";
 
 export default defineConfig({
   plugins: [glsl()],
-  base: "/dl-website-s23/",
+  base: "/dl-website-s24/",
   build: {
     rollupOptions: {
       input: {
