@@ -90,6 +90,7 @@ a {
 }
 
 .border-accent {
+  border-width: 1px;
   border-color: #6868ac;
 }
 
@@ -102,4 +103,20 @@ a {
   background-color: #6868ac;
   color: rgb(241 245 249);
   cursor: pointer;
+}
+
+.disabled-button {
+  border-width: 1px;
+  border-color: #94a3b8;
+  cursor: not-allowed;
+  color: #94a3b8;
+  filter: grayscale(1);
+}
+
+.disabled-button:hover {
+  cursor: not-allowed;
+}
+
+.filter-slate {
+  filter: invert(80%) sepia(20%) saturate(211%) hue-rotate(173deg) brightness(99%) contrast(90%)
 }
